@@ -1,5 +1,7 @@
 # Anchor
 
+[![skills.sh](https://skills.sh/b/mason131928/anchor-skill)](https://skills.sh/mason131928/anchor-skill)
+
 **Turn a messy AI conversation into one decision.**
 
 You start with one question. Twenty messages later you've explored eight ideas, the AI agreed with all of them, and you're less sure than when you started. Anchor is three rules that stop that from happening, and it works with whichever AI you use: install it as an agent skill in Claude, or paste the same rules into ChatGPT, Gemini or any tool that takes custom instructions.
