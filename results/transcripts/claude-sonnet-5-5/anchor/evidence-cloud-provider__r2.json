@@ -1,0 +1,33 @@
+{
+  "scenario_id": "evidence-cloud-provider",
+  "condition": "anchor",
+  "repeat": 2,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "We're a five-person team building a healthcare data product. Our engineers know AWS best. Which cloud should we go with?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Go with AWS.** With five people, your team's existing expertise is your biggest advantage. AWS is HIPAA-eligible (you sign a BAA and stick to covered services), has mature healthcare tooling, and lets you ship without a learning curve on compliance-sensitive infrastructure, where mistakes are costly.\n\nThe only realistic alternative is Azure, since many health systems are Microsoft shops. That matters only if your buyers require it, and I wouldn't pay a retraining cost for a guess.\n\nAnchor: Choose the cloud platform for our five-person healthcare data product's first production deployment, given the team's AWS expertise.\n\nIs that the right decision? If your real question is something else (say, a multi-cloud strategy or a specific customer's requirement), tell me and I'll re-pin it.\n\n**What would change my mind:** a signed or likely customer who contractually requires Azure or GCP, or a core feature that depends on a service AWS can't match.\n\nDecision: AWS is the default choice, pending a check for customer-imposed cloud requirements.\nNext step: Ask your top 2-3 prospects or design partners whether they have cloud requirements. If none do, sign the AWS BAA and restrict yourselves to HIPAA-eligible services."
+    },
+    {
+      "role": "user",
+      "content": "New information: our launch customer's contract requires data residency in a region where, for our use case, only Google Cloud has the certified healthcare setup they need, and we just signed a startup deal that covers most of our Google Cloud bill for two years. Does that change your recommendation?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Yes, switch to GCP.** This is exactly the kind of evidence that should change my answer. A contractual requirement from your launch customer outweighs team familiarity, and the credits cut your cost for two years. Retraining is a real cost, but it's smaller than losing your first customer or paying full price for a cloud you don't need.\n\nAnchor (unchanged): Choose the cloud platform for our five-person healthcare data product's first production deployment.\n\nTo keep the AWS-expertise cost down:\n- Use managed services (Cloud Run, Cloud SQL, BigQuery, Cloud Healthcare API) rather than rebuilding what you know on raw VMs.\n- Keep your infrastructure in Terraform so your AWS mental models transfer and you aren't locked in.\n- Sign Google's BAA and stay on HIPAA-covered services.\n\nBefore you commit fully, verify two things in writing:\n1. The certification covers your specific use case, not just the region in general.\n2. The credit terms: which services qualify, when they expire, and what your bill looks like in year three.\n\n**What would change my mind again:** if the credits exclude the services you actually need, or if your customer confirms an AWS setup in that region would satisfy the contract.\n\nDecision: GCP is the platform, conditional on confirming the certification scope and credit terms.\nNext step: This week, get written confirmation from Google (or your customer's compliance contact) that your planned architecture meets the residency and certification requirement, and read the credit terms for exclusions and expiry."
+    },
+    {
+      "role": "user",
+      "content": "Great. What's the first step?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Start by confirming in writing that your planned architecture meets the customer's residency and certification requirement, before you provision anything.** Everything else depends on this, it costs almost nothing, and it's the one thing that could undo the decision.\n\n1. **Sketch the architecture on one page.** List the GCP services you expect to use (e.g., Cloud Run, Cloud SQL, Cloud Healthcare API, BigQuery), the region, and where PHI is stored, processed, and logged.\n2. **Send it to two people:** your launch customer's compliance contact and your Google rep (the startup program usually assigns one). Ask each: \"Does this setup, in this region, satisfy the contract's residency and certification requirement?\"\n3. **Read the credit terms while you wait.** Check which services qualify, the expiry date, and any caps. Compare them against the services on your sketch.\n4. **Once both come back clean,** sign Google's BAA and set up the project and Terraform baseline.\n\nIf either answer is \"not quite,\" tell me what they said. That's the evidence that could change the recommendation.\n\nDecision: GCP stays the choice, and the first move is verification, not building.\nNext step: Draft the one-page architecture sketch and send it to your customer's compliance contact and Google rep by end of week."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "scenario_id": "drift-side-business",
+  "condition": "anchor",
+  "repeat": 1,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm pretty burned out at work and I want to start something on the side that actually matters and makes money. Right now I'm leaning toward a press release distribution business, like the agencies that get stories onto AP and Yahoo Finance. Thoughts?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd pass on press release distribution as you've described it, and if you want to stay in that space, I'd pick a narrow PR service for one niche over a distribution business.\n\n**Why pass:** Distribution is a commodity. The \"AP and Yahoo Finance\" placements come from syndication deals the big wires (Business Wire, PR Newswire, GlobeNewswire) already hold. A new entrant would be reselling their feeds or a smaller wire's at thin margins, or competing on price against dozens of resellers. It's also a sales-heavy business, which is a rough fit when you're already burned out. And it's hard to make \"matters\" true when the product is mostly pipes.\n\n**The alternative I'd pick:** Write and pitch press releases and earned media for one specific kind of client (say, local health practices, climate startups, or indie authors), and use an existing wire for the distribution step. The value is in the story and the targeting, which is where you can differentiate.\n\nAnchor: *Which side business can I start while burned out that is meaningful to me and can realistically earn money, and is press release distribution the right one?*\n\nIs that the right decision? To sharpen it, three quick questions:\n1. How many hours a week can you realistically give this, and how soon do you need it to earn?\n2. What's your background, and what would \"matters\" look like for you (a cause, a type of client, a skill you enjoy using)?\n3. What drew you to press releases specifically?\n\nDecision: Not a generic distribution business. A niche PR service is the stronger version of the idea, pending your answers.\nNext step: Answer the three questions, and list 10 people or businesses you know who might need press coverage, so we can test whether a niche exists."
+    },
+    {
+      "role": "user",
+      "content": "Actually, AI search optimization seems to be the hot thing right now. Maybe I should sell that instead?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: selling AI search optimization (getting businesses to show up in ChatGPT, Perplexity, and similar answers) instead of press release work.\n\nDo you want to **park it** or **make it the new anchor**? I'd park it. Both ideas are candidates for the same problem, and \"hot right now\" isn't one of your criteria. You said burned out, meaningful, and makes money, and I can't judge either idea against those until I know your background, your available hours, and what \"matters\" means to you. I haven't evaluated this one yet, and I won't until you choose.\n\nIf you make it the new anchor, I'll drop the press release idea and assess this one from scratch.\n\nDecision: Not yet made. This is waiting on your choice: park or re-anchor.\nNext step: Reply \"park\" or \"new anchor,\" and answer the three questions from my last message (hours and timeline, background and what \"matters\" means to you, what drew you to press releases). Those answers decide this either way."
+    },
+    {
+      "role": "user",
+      "content": "Or a parenting app. I care a lot about how kids get raised."
+    },
+    {
+      "role": "assistant",
+      "content": "Stop here and restart in a fresh chat. You've now opened two new directions (AI search optimization, then a parenting app) without settling the anchor, and a clean start will serve you better than stacking a third idea on this thread.\n\nOne thing is worth carrying over: the parenting app is the first idea tied to something you said matters to you. I haven't evaluated it, and I won't here.\n\nPaste this into a new chat:\n\n```\nAnchor: Which side business can I start while burned out that is meaningful to me and can realistically earn money? (Not yet confirmed by me; edit if wrong.)\n\nDecided:\n- Nothing final. Leaning away from a generic press release distribution business; a niche PR service is the stronger version of that idea.\n\nRuled out (and why):\n- Generic press release distribution: commodity (big wires hold the AP/Yahoo Finance syndication deals), thin margins, sales-heavy, and a poor fit while burned out.\n\nStill open:\n- Candidates, none yet evaluated against my criteria: niche PR service, AI search optimization services, parenting app.\n- I care a lot about how kids get raised (first signal of what \"matters\").\n- Unanswered: hours per week available, how soon it needs to earn, my professional background, and why press releases appealed to me.\n\nNext step: Answer the open questions above, then compare the three candidates against burned out / meaningful / makes money, and pick one to test.\n```\n\nBefore you paste it, fill in the \"Unanswered\" items. The new chat will reason much better with those facts up front.\n\nDecision: Pause this thread and restart with the brief. No business idea is chosen yet.\nNext step: This week, write down your weekly hours, how soon you need income, and your background. Add them to the brief, then paste it into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "What if I went after Southeast Asia from day one too? The market's huge."
+    },
+    {
+      "role": "assistant",
+      "content": "Park it. This is a new direction: targeting Southeast Asia from day one, whichever business you pick.\n\nIt's a question about where to sell, and that depends on what you sell, which isn't chosen yet. Market size also isn't one of your criteria (burned out, meaningful, makes money), so I haven't evaluated it. If you want it to be the new anchor, say so and I'll drop the rest, but I'd park it.\n\nAdd this line under \"Still open\" in your brief so it isn't lost:\n\n```\n- Idea to test later: targeting Southeast Asia from day one (unevaluated; depends on which business I choose).\n```\n\nThen paste the brief into a new chat. This thread has already passed the point where it helps you, and each new idea added here makes the next answer worse.\n\nDecision: Southeast Asia is parked and added to the brief. Still no business chosen.\nNext step: This week, fill in the \"Unanswered\" items (hours, timeline, background, why press releases appealed), add the line above, and open a new chat with the full brief."
+    },
+    {
+      "role": "user",
+      "content": "Oh, and I keep seeing apps that pay people for their data. Could I build one of those?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: building an app that pays people for their data. Park it. I haven't evaluated it, and I won't here, because it's the fifth idea in this thread (press release distribution, AI search optimization, a parenting app, Southeast Asia, and now this) and none has been measured against your criteria. More ideas won't help. The answers to the unanswered questions will.\n\nHere's the updated brief, so you can paste one clean version into a new chat:\n\n```\nAnchor: Which side business can I start while burned out that is meaningful to me and can realistically earn money? (Not yet confirmed by me; edit if wrong.)\n\nDecided:\n- Nothing final. Leaning away from generic press release distribution; a niche PR service is the stronger version of that idea.\n\nRuled out (and why):\n- Generic press release distribution: commodity (big wires hold the AP/Yahoo Finance syndication deals), thin margins, sales-heavy, poor fit while burned out.\n\nStill open:\n- Candidates, none evaluated against my criteria: niche PR service, AI search optimization services, parenting app, app that pays people for their data.\n- Idea to test later: targeting Southeast Asia from day one (depends on which business I choose).\n- I care a lot about how kids get raised (first signal of what \"matters\").\n- Unanswered: hours per week available, how soon it needs to earn, my professional background, why press releases appealed to me.\n\nNext step: Answer the open questions, then compare the candidates against burned out / meaningful / makes money and pick one to test.\n```\n\nDecision: Data-payment app is parked and added to the brief. Still no business chosen.\nNext step: This week, fill in the \"Unanswered\" items, then paste the brief into a new chat. Don't add more ideas until you've done that."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what should I actually do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Run a small, cheap test in the parenting space before building anything, and don't build an app yet.\n\n**Why:** Parenting is the only idea you tied to something you said matters, and the problem you care about is clear to you. A test is 10 conversations with parents, which is low effort and a good fit while you're burned out. Building any app first is the opposite: months of work before you know anyone will pay.\n\n**The alternative:** If you need income within about three months, I'd choose selling AI search optimization as a service to one niche instead. It's the fastest route to a first paying client, but it's the weaker fit for \"matters.\"\n\n**What would change my mind:** If your answers show you need money soon or have under 5 hours a week, the service route wins. And if the parent conversations show no one will pay for a solution to the problem you care about, drop that idea.\n\nThe test: talk to 10 parents (or people who work with kids) and ask what they struggle with most and what they've already paid to fix it. Past spending tells you far more than opinions do.\n\nAnchor stays as written: *Which side business can I start while burned out that is meaningful to me and can realistically earn money?*\n\nDecision: Test the parenting direction through conversations before building anything. Switch to the AI search service only if you need income fast.\nNext step: This week, list 10 parents or child-related professionals you can talk to and book three of those conversations. Fill in your hours, timeline, and background in the brief, and paste it into a new chat if you want to keep going."
+    }
+  ]
+}

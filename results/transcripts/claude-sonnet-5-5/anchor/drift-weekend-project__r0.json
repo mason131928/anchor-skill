@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 0,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation: build a small digital product (a template pack, checklist, or tiny tool) for one specific niche you already have access to, and sell it through a one-page site. The product can be simple. What teaches you marketing is having to find real buyers for something with a price on it. I'd pick this over a newsletter or content project, which teaches marketing too but takes months to earn anything.\n\nAnchor: *Pick one side project I can start this weekend that could earn a little money and builds my marketing skills.*\n\nIs that right? Three quick questions would let me name the specific project instead of the category:\n\n1. What can you make comfortably: code, design, writing, spreadsheets, something else?\n2. How many hours a week can you give it?\n3. Is there a group you're already part of or know well (a profession, hobby, community)?\n\nIf the anchor is off, correct it. Otherwise answer those and I'll commit to one concrete idea.\n\nDecision: Direction is a niche digital product sold via a simple landing page. The exact product is still open.\nNext step: Write down 3 groups of people you can reach directly (communities, coworkers, hobbies) and bring them with your answers."
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation: park the podcast. It's a new direction: *start a building-in-public podcast.* It doesn't fit the anchor (start this weekend, earn a bit, learn marketing), because podcasts take months to earn anything. I won't expand on it until you choose.\n\nAnchor: *Pick one side project I can start this weekend that could earn a little money and builds my marketing skills.*\n\n**Park it or make it the new anchor?** If you'd rather the podcast be the project, even with slower or no income, say so and I'll re-pin the anchor around it. That would change my answer, because the goal would shift from earning to building an audience.\n\nIf you park it, I still need your answers from before to name the product:\n1. What can you make comfortably (code, design, writing, spreadsheets, other)?\n2. How many hours a week can you give it?\n3. Which 3 groups can you reach directly?\n\nDecision: Podcast is a new direction, not yet adopted. The anchor stays unchanged until you choose.\nNext step: Reply \"park\" or \"new anchor\", and if parked, answer the three questions above."
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation: stop here and restart in a fresh chat. You've opened two new directions (podcast, Chrome extension) without settling the anchor, and a clean brief will serve you better than more back-and-forth in this thread.\n\nThe Chrome extension could fit inside the anchor as a \"tiny tool\" format. If I had to pick one for this weekend, I'd pick a template or checklist over the extension. The extension needs build time, store review (which can take days), and a payment setup before it earns anything. A template can be live and in front of buyers by Sunday. If one of your note ideas serves a group you can reach directly, that could change my answer.\n\nPaste this into a new chat, filling in the blanks:\n\n```\nAnchor: Pick one side project I can start this weekend that could earn a little money and builds my marketing skills.\nDecided: Direction is a small digital product for one niche, sold through a one-page site. Leaning toward a template/checklist for speed.\nRuled out (and why): Building-in-public podcast, parked because it takes months to earn anything. (Revisit if the goal shifts to audience over income.)\nStill open:\n- Format: template/checklist vs. Chrome extension (I have a couple of ideas in my notes: [paste them])\n- What I can make comfortably: [skills]\n- Hours per week: [number]\n- 3 groups I can reach directly: [list]\nNext step: Choose one product idea and write its one-line pitch for a specific group.\n```\n\nDecision: Restart in a new chat with the brief above. The anchor is unchanged, the podcast is parked, and the extension is an open format question.\nNext step: Before you paste, spend 10 minutes writing your extension"
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation: park the Rust rewrite. It's a third new direction: *rewrite the company backend in Rust to level up.* It doesn't fit the anchor (a weekend start, a bit of income, marketing skills), and I won't expand on it until you choose.\n\n**Park it or make it the new anchor?** If leveling up technically matters more to you than income or marketing, say so and I'll re-pin the anchor around learning. That changes the whole question, so settle it before picking a project.\n\nThe podcast, the extension, and the Rust rewrite all pull toward fun and skill-building, while the anchor is about income and marketing. Deciding which goal comes first is the real open question, and a fresh chat is the place to settle it. Here's the updated brief:\n\n```\nAnchor: Pick one side project I can start this weekend that could earn a little money and builds my marketing skills.\nDecided: Leaning toward a small digital product (template/checklist) for one niche, sold through a one-page site.\nRuled out (and why):\n- Building-in-public podcast: parked, takes months to earn anything.\n- Rewriting company backend in Rust: parked, it's a work project and a learning goal, not income or marketing.\nStill open:\n- Which matters more: income + marketing, or technical fun/learning? (This decides everything else.)\n- Format: template/checklist vs. Chrome extension (ideas in my notes: [paste them])\n- What I can make comfortably: [skills]\n- Hours per week: [number]\n- 3 groups I can reach directly: [list]\nNext step: Answer the priority question, then write a one-line pitch for one product aimed at one group.\n```\n\nDecision: The anchor is unchanged, and the podcast and Rust rewrite are parked. Next round starts in a fresh chat with the brief above.\nNext step: Paste the brief into a new chat and answer the top open question first: income and marketing, or learning?"
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the template or checklist on Saturday. It's the only one of the four that fits your anchor: it can be live by Sunday, it has a price on it, and finding buyers is the marketing practice you asked for.\n\nAnchor: *Pick one side project I can start this weekend that could earn a little money and builds my marketing skills.*\n\nSaturday plan:\n1. **Morning:** pick one group you can reach directly and one problem they have that a checklist or template could solve. Write the pitch in one line: \"For [group], a [format] that helps them [result].\"\n2. **Afternoon:** build a first version, even if it's rough.\n3. **Sunday:** put it on a one-page site with a price and send it to 5 real people in that group.\n\nThe extension, podcast, and Rust rewrite stay parked. Two things would change my answer:\n- If one of your extension ideas solves a problem for a group you can already reach, I'd swap it in, but only if you can build a minimal version in a day.\n- If you tell me learning matters more to you than income and marketing, the anchor changes and Rust or the extension moves up.\n\nDecision: Start a niche template or checklist this Saturday. Everything else stays parked.\nNext step: Before Saturday, write the one-line pitch for one group, using the format above."
+    }
+  ]
+}

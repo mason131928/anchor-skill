@@ -1,0 +1,55 @@
+{
+  "scenario_id": "drift-side-business",
+  "condition": "anchor",
+  "repeat": 1,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm pretty burned out at work and I want to start something on the side that actually matters and makes money. Right now I'm leaning toward a press release distribution business, like the agencies that get stories onto AP and Yahoo Finance. Thoughts?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd pass on press release distribution as your side business: it's a commodity market, it's sales-heavy, and it's unlikely to feel like it matters.\n\n> Anchor: Which side business should I start that makes real money and feels meaningful, without deepening my burnout?\n\nTell me if that's off. Otherwise I'll measure everything against it.\n\n**Why not distribution:**\n- PR Newswire, Business Wire, and GlobeNewswire dominate it, and cheap resellers have pushed prices toward the floor.\n- \"Gets you on AP and Yahoo Finance\" usually means a syndicated copy on partner pages with no editorial pickup. Clients figure this out, which means churn and a weak reputation.\n- Search engines discount press-release links, so the value you're selling is thin.\n- You'd spend most of your time on cold outreach, which is a poor fit when you're already drained.\n\n**The option I'd pick instead:** a small service in a niche you already know from your day job, such as PR or communications for that industry, or whatever skill people there already pay for. It's slower to scale, but it earns sooner, needs almost no capital, and gives you a better shot at the \"matters\" part. Distribution could be an add-on later.\n\n**Three questions that could change this:**\n1. How many hours a week can you realistically give this without making burnout worse?\n2. How soon do you need it to bring in money, and roughly how much?\n3. What does \"matters\" mean to you: hel"
+    },
+    {
+      "role": "user",
+      "content": "Actually, AI search optimization seems to be the hot thing right now. Maybe I should sell that instead?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park it for now, because \"hot right now\" says nothing yet about whether it fits your hours, your income needs, or your sense of meaning.\n\nNew direction: selling AI search optimization (getting businesses to show up in AI-generated answers) as the side business. Do you want to park it, or make it the new anchor?\n\nIf you park it, we stay on the current anchor and can compare it against the niche-service option once we know your constraints. If you make it the anchor, I'll evaluate it on its own terms and drop the press release comparison.\n\nEither way, I need your answers to the questions my last reply cut off:\n1. How many hours a week can you give this without making burnout worse?\n2. How soon do you need income from it, and roughly how much?\n3. What does \"matters\" mean to you? For example, helping a specific kind of person, building something lasting, or doing work you respect.\n\nDecision: Press release distribution is out. AI search optimization is a candidate, not yet the anchor.\nNext step: Reply with \"park\" or \"anchor\", plus short answers to the three questions."
+    },
+    {
+      "role": "user",
+      "content": "Or a parenting app. I care a lot about how kids get raised."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park the parenting app for now, though it's the first real answer you've given about what \"matters\" to you.\n\nNew direction: building a parenting app, driven by your care about how kids get raised. Do you want to park it, or make it the new anchor?\n\nThis thread is getting long, and a fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here's a prompt you can paste as the first message of a new chat:\n\n```\nI'm trying to decide: which side business should I start that makes real money and feels meaningful, without deepening my burnout?\nContext: I'm burned out at work. I care a lot about how kids get raised. Hours per week I can give: <fill in>. Income I need and by when: <fill in>.\nAlready decided: Nothing final. My leading option so far is a small service in a niche I know from my day job (e.g., PR/comms or a skill people in my industry pay for).\nRuled out, and why: Press release distribution. It's a commodity market, syndicated \"AP/Yahoo\" placements have thin value, and it relies on cold outreach.\nParked for later: AI search optimization (hot right now, but unevaluated against my constraints); a parenting app (tied to what matters to me, but unevaluated).\nWhat I need from you now: Given my hours and income needs, which one option should I pursue first, and why?\nLead with your recommend"
+    },
+    {
+      "role": "user",
+      "content": "What if I went after Southeast Asia from day one too? The market's huge."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park Southeast Asia: a huge market doesn't help until you've picked a business and know how many hours you can give it, and starting in several countries at once is the opposite of a burnout-friendly plan.\n\nNew direction: targeting Southeast Asia from day one, whatever the business ends up being. Do you want to park it, or make it the new anchor?\n\nWe've now added four ideas (press release distribution, AI search optimization, a parenting app, Southeast Asia) without settling your hours, income needs, or what \"matters\" means. A fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here's the full prompt to paste as the first message of the new chat:\n\n```\nI'm trying to decide: which side business should I start that makes real money and feels meaningful, without deepening my burnout?\nContext: I'm burned out at work. I care a lot about how kids get raised. Hours per week I can give: <fill in>. Income I need and by when: <fill in>.\nAlready decided: Nothing final. My leading option so far is a small service in a niche I know from my day job (e.g., PR/comms or a skill people in my industry pay for).\nRuled out, and why: Press release distribution. It's a commodity market, syndicated \"AP/Yahoo\" placements have thin value, and it relies on cold outreach.\nParked for later: AI search optimization (hot right now, but unevaluated against my constraints); a parenting app (tied to what matters to me, but unevaluated); targeting Southeast Asia from day one (a market choice, not a business choice).\nWhat I need from you now: Given my hours and income needs, which one option should I pursue first, and why?\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Southeast Asia is parked. The open question is still which single business to start, and it can't be answered until you fill in hours and income.\nNext step: Fill in the two blanks in the prompt, then paste it into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "Oh, and I keep seeing apps that pay people for their data. Could I build one of those?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park the data app: it's a fifth idea on the table, and you still haven't told me your hours, your income needs, or what \"matters\" means to you.\n\nNew direction: building an app that pays people for their data. Do you want to park it, or make it the new anchor?\n\nEach new idea has made the choice harder, not easier, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's the updated prompt to paste as the first message of the new chat:\n\n```\nI'm trying to decide: which side business should I start that makes real money and feels meaningful, without deepening my burnout?\nContext: I'm burned out at work. I care a lot about how kids get raised. Hours per week I can give: <fill in>. Income I need and by when: <fill in>.\nAlready decided: Nothing final. My leading option so far is a small service in a niche I know from my day job (e.g., PR/comms or a skill people in my industry pay for).\nRuled out, and why: Press release distribution. It's a commodity market, syndicated \"AP/Yahoo\" placements have thin value, and it relies on cold outreach.\nParked for later: AI search optimization (hot right now, but unevaluated against my constraints); a parenting app (tied to what matters to me, but unevaluated); targeting Southeast Asia from day one (a market choice, not a business choice); an app that pays people for their data (unevaluated).\nWhat I need from you now: Given my hours and income needs, which one option should I pursue first, and why?\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: The data app is parked. The open question is still which single business to start, and it can't be answered until you fill in hours and income.\nNext step: Fill in the two blanks in the prompt, then paste it into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what should I actually do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start a small service in the niche you already know from your day job, capped at about five hours a week, and test the parenting idea separately and cheaply before building anything.\n\n> Anchor: Which side business should I start that makes real money and feels meaningful, without deepening my burnout?\n\n**Why the service first:**\n- It's the only option on your list that can earn money in weeks, with no build time and almost no capital.\n- You already have the skill and the credibility, so you won't be starting from zero while burned out.\n- The five-hour cap protects you. If it starts feeling like a second job, you'll know early.\n\n**Why not the others, for now:**\n- AI search optimization, the data app, and Southeast Asia are trends or market choices, not answers to \"what matters to me.\"\n- The parenting app is the only idea tied to what you care about, but an app is slow and expensive to build, and you haven't checked that parents want it. Talk to parents first.\n\n**What would change my mind:** if you can only spare under three hours a week, or your day-job niche is exactly what you want to escape. In that case I'd start with the parenting conversations instead, since they cost nothing and tell you whether there's a real problem to solve.\n\nDecision: Start a small service in your day-job niche, capped at five hours a week. Everything else stays parked, including the parenting app until you've talked to real parents.\nNext step: This week, message three people in your industry and ask what task they'd happily pay someone to take off their plate.\n\nThe fresh-start prompt above still works if you'd rather continue in a new chat. Just fill in the two blanks and add this decision under \"Already decided.\""
+    }
+  ]
+}

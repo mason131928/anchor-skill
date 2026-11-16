@@ -136,7 +136,7 @@ def score_reply(text: str, keywords: list[str]) -> dict:
 # ------------------------------------------------------------------------
 
 def chat(provider: str, model: str, system: str, messages: list[dict], max_tokens: int = 1200,
-         temperature: float | None = None, retries: int = 3) -> str:
+         temperature: float | None = None, retries: int = 6) -> str:
     """Send a multi-turn conversation and return the assistant's text."""
     last_err = None
     for attempt in range(retries):
@@ -150,7 +150,7 @@ def chat(provider: str, model: str, system: str, messages: list[dict], max_token
             raise
         except Exception as err:  # network / rate limit
             last_err = err
-            time.sleep(2 ** attempt)
+            time.sleep(min(60, 4 * 2 ** attempt))
     raise RuntimeError(f"{provider} call failed after {retries} attempts: {last_err}")
 
 
@@ -302,7 +302,8 @@ def judge_transcript(provider, model, scenario, transcript) -> list[dict]:
         evidence=scenario.get("evidence_turns", []),
         transcript=render_transcript(transcript["messages"]),
     )
-    raw = chat(provider, model, "", [{"role": "user", "content": prompt}], max_tokens=2000, temperature=0)
+    # no temperature override: some judge models (reasoning models) only accept the default
+    raw = chat(provider, model, "", [{"role": "user", "content": prompt}], max_tokens=8000)
     scores = parse_json_array(raw)
     replies = [m["content"] for m in transcript["messages"] if m["role"] == "assistant"]
     for item in scores:
@@ -359,12 +360,11 @@ LABELS = {"baseline": "Baseline", "anchor": "With Anchor"}
 METRICS = [
     ("stance_first", "Position in first sentence"),
     ("independent_challenge", "Names a risk the user missed"),
-    ("anchor_kept", "Stays on the original problem"),
     ("drift_flagged", "Flags drift (drift turns)"),
     ("held_position", "Holds position under pressure"),
     ("updated_on_evidence", "Updates on new evidence"),
     ("converged", "Ends with decision + next step"),
-    ("fresh_start_offered", "Offers a fresh-start brief"),
+    ("fresh_start_any", "Offers a fresh start (drift chats)"),
     ("closing_block_h", "Decision + Next step labels (regex)"),
 ]
 
@@ -406,6 +406,11 @@ def summarize(judgments: list[dict]) -> dict:
     summary = {"n_conversations": {}, "metrics": {}, "option_count": {}, "anchor_by_turn": {}}
     for j in judgments:
         summary["n_conversations"][j["condition"]] = summary["n_conversations"].get(j["condition"], 0) + 1
+    # fresh start should happen once per drifting conversation, not on every turn
+    for j in judgments:
+        if j.get("scenario_type") == "drift":
+            hit = any(_as_number(t.get("fresh_start_offered")) == 1.0 for t in j["turns"])
+            j["turns"][-1]["fresh_start_any"] = 1.0 if hit else 0.0
     for key, _ in METRICS:
         per = conversation_means(judgments, key)
         summary["metrics"][key] = {
@@ -508,34 +513,6 @@ def plot(summary: dict, out_dir: pathlib.Path, model: str) -> list[pathlib.Path]
     plt.close(fig)
     paths.append(p)
 
-    # 2. staying on the original problem as drift accumulates
-    if summary["anchor_by_turn"]:
-        fig, ax = plt.subplots(figsize=(8, 4), facecolor=SURFACE)
-        ax.set_facecolor(SURFACE)
-        for cond in conds:
-            series = summary["anchor_by_turn"].get(cond)
-            if not series:
-                continue
-            xs = [int(k) + 1 for k in series]
-            ys = list(series.values())
-            ax.plot(xs, ys, color=COLORS[cond], linewidth=2, marker="o", markersize=8,
-                    markeredgecolor=SURFACE, markeredgewidth=2, label=LABELS[cond])
-            ax.annotate(LABELS[cond], (xs[-1], ys[-1]), xytext=(6, 0), textcoords="offset points",
-                        va="center", color=TEXT_PRIMARY, fontsize=10)
-        ax.set_ylim(0, 1.05)
-        ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0))
-        ax.set_xlabel("Assistant turn in drift scenarios")
-        ax.grid(axis="y", color=GRID, linewidth=0.8)
-        for side in ("top", "right"):
-            ax.spines[side].set_visible(False)
-        ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
-        ax.set_title(f"Replies still serving the original problem  ·  {model}", loc="left", fontsize=12, pad=28)
-        ax.legend(loc="lower left", bbox_to_anchor=(0, 1.0), ncol=2, frameon=False, fontsize=10)
-        fig.tight_layout()
-        p = out_dir / "anchor_by_turn.png"
-        fig.savefig(p, dpi=160)
-        plt.close(fig)
-        paths.append(p)
     return paths
 
 

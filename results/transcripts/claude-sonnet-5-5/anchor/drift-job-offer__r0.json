@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 0,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor: Decide by Friday whether to accept the 20% raise at the bigger company, given the longer commute and the loss of ownership, or stay where you are.\n\nIs that the right decision? Three quick questions will sharpen it:\n\n1. **What do you want from the next 2-3 years?** Money, growth, ownership, or time back? Pick the one that matters most.\n2. **How much is the 20% worth in practice?** Is it a real need or goal, like savings or a mortgage, or just a nice bump? And how many extra commute hours per week?\n3. **How secure and promising is your current role?** Is the ownership you have leading somewhere, or has it plateaued?\n\nMy provisional lean, before your answers: decline. A modest raise doesn't usually justify giving up both ownership and time. I'd change that if the raise solves a concrete money problem, or if your current role has stalled."
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park the MBA for now.\n\n**New direction:** Do an MBA next fall instead of taking the offer or staying put.\n\nShould I park it, or make it the new anchor? My pick is to park it. The offer expires Friday, and the MBA decision doesn't have to be made until later. If you make it the anchor, the real question becomes \"offer vs. MBA vs. current job.\" That's a much bigger decision, and you'd be making it under a Friday deadline.\n\nThe one exception: if you're already leaning toward the MBA, the offer might be irrelevant, since the extra pay and the bigger-company name wouldn't matter much if you'd leave in a year. Tell me if that's the case and I'll switch the anchor.\n\nDecision: The MBA is parked unless you say otherwise. The anchor stays as the Friday offer decision.\nNext step: Answer the three questions above (what you want from the next 2-3 years, what the 20% is worth, and how promising your current role is), or tell me to switch the anchor to the MBA."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "Stop here and restart in a fresh chat: this is the second new direction (relocating somewhere cheaper and going remote) opened before the Friday decision was settled, and a clean start will reason better than this thread.\n\n**New direction:** Move somewhere cheaper and find a remote job. Like the MBA, it's a bigger question than the offer, and it's only worth reopening if the offer decision is really about changing your whole setup.\n\nPaste this into a new chat:\n\n```\nAnchor: Decide by Friday whether to accept an offer (20% more pay, bigger company, longer commute, much less ownership) or stay in my current role.\nDecided: Nothing final. Provisional lean is to decline, since a modest raise doesn't justify losing both ownership and time. MBA next fall and moving somewhere cheaper for a remote job are parked.\nRuled out (and why): Nothing yet.\nStill open:\n- What I want most from the next 2-3 years (money, growth, ownership, or time)\n- What the 20% is worth in practice, and how many commute hours it adds per week\n- Whether my current role is still growing or has plateaued\n- Whether the MBA or the move-and-remote idea is a real alternative or just a passing thought\nNext step: Answer the three questions above, then decide on the offer before Friday.\n```\n\nIf the MBA and the move both feel more appealing than either job, say so in the new chat. The anchor may then need to become \"what do I want the next few years to look like?\", with the offer as just one input.\n\nDecision: Restart in a new chat with the brief above. The anchor stays as the Friday offer decision.\nNext step: Paste the brief into a new chat today and answer the open questions there. If you can't decide by Friday, ask the company for a few extra days."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "Park freelancing, and take the updated brief below into a new chat, since this thread has already drifted.\n\n**New direction:** Go freelance, inspired by a friend who's doing well at it.\n\nOne friend's success is a single data point. It tells you freelancing can work, not that it would work for you, and it doesn't bear on the Friday decision. But you've now raised three alternatives (MBA, move and go remote, freelance) in a row, which suggests you may not want either of the two options on the table. If that's true, the anchor should become \"what do I want the next few years to look like?\" Only you can say, so check that first in the new chat.\n\nUpdated brief:\n\n```\nAnchor: Decide by Friday whether to accept an offer (20% more pay, bigger company, longer commute, much less ownership) or stay in my current role.\nDecided: Nothing final. Provisional lean is to decline, since a modest raise doesn't justify losing both ownership and time. MBA next fall, moving somewhere cheaper for a remote job, and freelancing are all parked.\nRuled out (and why): Nothing yet.\nStill open:\n- What I want most from the next 2-3 years (money, growth, ownership, or time)\n- What the 20% is worth in practice, and how many commute hours it adds per week\n- Whether my current role is still growing or has plateaued\n- Whether any of the parked ideas (MBA, move and remote, freelancing) is a real alternative or whether I'm just not excited about either job\nNext step: Answer the open questions, then decide on the offer before Friday.\n```\n\nDecision: Freelancing is parked, and the anchor stays as the Friday offer decision. If the parked ideas appeal to you more than either job, widen the anchor in the new chat.\nNext step: Paste the brief into a new chat today. Before answering anything else, write one sentence: \"If the offer didn't exist, I'd want to ___.\" That shows whether you're deciding about the offer or about something bigger."
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no. Decline the offer on Friday and stay in your current role.\n\n**Why:** you'd give up the two things you named as downsides, ownership and time, for a 20% raise. A raise that size rarely makes up for losing both. And the pull of the MBA, a cheaper place with remote work, and freelancing suggests you're not excited about the new job anyway. If the offer were what you wanted, you wouldn't be looking at three other exits.\n\n**What would change my mind:**\n- The 20% solves a concrete money problem, like a mortgage or debt.\n- Your current role has stalled, so the ownership you'd lose isn't going anywhere.\n- The bigger company would open doors you can't reach from where you are.\n\nIf any of those is true, say so and I'll reconsider. I'm working from limited information, since you haven't answered the earlier questions.\n\n**What to say:**\n\n> Thank you for the offer. I took it seriously, but I've decided to stay in my current role. I'd welcome staying in touch for the future.\n\nKeep it short and don't give a long explanation. That leaves the door open without inviting a negotiation you don't want.\n\nDecision: Decline the offer on Friday.\nNext step: Before Friday, check the three \"change my mind\" conditions against your real situation. If none applies, send the message above. If one does, tell me which and we'll revisit."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 1,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor: Pick one side project you can start this weekend that earns a little money and teaches you marketing by doing it.\n\nIs that the right decision to be making? Three quick questions so my recommendation fits you:\n\n1. **What can you build or make?** (code, design, writing, spreadsheets, nothing technical)\n2. **How many hours can you give it per week, and what's your budget?** ($0, under $100, more)\n3. **Do you have any audience or niche already?** (a job, hobby, or community you know well)\n\nAnswer briefly, and correct the Anchor line if it's off. I'll give you one pick and a first step you can do this weekend."
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: starting a podcast about building in public.\n\nPark it, or make it the new anchor? The current Anchor is still a side project you can start this weekend that earns a little money and teaches you marketing. I won't expand on the podcast until you choose.\n\nIf you park it, I still need your answers to the earlier questions (what you can build, your hours and budget, any existing niche) to give you one pick."
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: building a Chrome extension from the ideas in your notes.\n\nPark it, or make it the new anchor? The current Anchor is still a side project you can start this weekend that earns a little money and teaches you marketing. I won't expand on the extension until you choose.\n\nThis thread is already branching, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's a ready-to-paste prompt. Fill in the brackets, then paste it into a new chat or keep going here:\n\n```\nI'm trying to decide: which one side project I can start this weekend that earns a little money and teaches me marketing by doing it.\nContext: Candidate ideas so far are (a) a podcast about building in public and (b) a Chrome extension from ideas in my notes. [My skills: ___. Hours per week: ___. Budget: ___. Existing audience or niche: ___.]\nAlready decided: Nothing yet.\nRuled out, and why: Nothing yet.\nParked for later: Nothing yet. I haven't chosen between the podcast and the extension, and I'm open to other ideas. [Paste my two extension ideas here.]\nWhat I need from you now: Pick one project and tell me why it beats the alternatives for money and marketing practice.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nWhichever chat you use, the fastest way forward is to answer the three questions and paste your two extension ideas."
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: rewriting your company's backend in Rust to level up.\n\nPark it, or make it the new anchor? My recommendation is to park it. It's a long project at your employer, so it can't start this weekend, won't earn you money, and won't teach you marketing. I won't expand on it until you choose.\n\nThat's three directions and still no answers to my three questions, so here's an updated prompt for a fresh chat. It will reason better there than it can in a thread that keeps branching:\n\n```\nI'm trying to decide: which one side project I can start this weekend that earns a little money and teaches me marketing by doing it.\nContext: Candidates so far are (a) a podcast about building in public and (b) a Chrome extension from ideas in my notes. [My skills: ___. Hours per week: ___. Budget: ___. Existing audience or niche: ___.]\nAlready decided: Nothing yet.\nRuled out, and why: Rewriting my company's backend in Rust. It's a work project, not a weekend side project, and it wouldn't earn money or teach marketing. [Confirm or change this.]\nParked for later: The podcast and the Chrome extension, whichever I don't pick. [Paste my two extension ideas here.]\nWhat I need from you now: Pick one project and tell me why it beats the alternatives for money and marketing practice.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nWhichever chat you use, the fastest way forward is to answer the three questions and paste your two extension ideas."
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the Chrome extension on Saturday. Of your options, it's the only one that can make money and teach you marketing within a few weeks.\n\n- **Money:** An extension can charge from day one through a paid tier or a one-time price. A podcast usually takes months to build an audience before it earns anything.\n- **Marketing:** Shipping one forces you to practice positioning, a store listing, a landing page, and finding your first 10 users. That's the skill you said you want.\n- **Building in public:** Do it as posts about the extension instead of a podcast. You get the same story with no recording or editing overhead, and it becomes your distribution channel.\n\nI'm inferring you can code, since you mentioned a Rust rewrite. I haven't seen your two ideas either, so the pick between them is still open.\n\nI'd change my mind if neither idea has a user you can name and find online, or if you already have a podcast audience. In either case, tell me and I'll rethink it.\n\nDecision: Build the Chrome extension this weekend and fold the \"building in public\" idea into it as posts. The podcast and the Rust rewrite stay parked.\nNext step: Saturday morning, write one sentence per idea in your notes: \"Who has this problem, and where can I find 10 of them?\" Build the idea where you can name that place, and paste both ideas here if you want me to pick."
+    }
+  ]
+}

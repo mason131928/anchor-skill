@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 2,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "My provisional lean is no: 20% is a modest gain to give up both ownership and commute time, and ownership is much harder to get back than salary. Three answers could flip that.\n\n> Anchor: Accept or decline the offer (20% more pay, bigger company, longer commute, less ownership) by Friday.\n\nIs that the right decision? If so:\n\n1. **Money:** Is the 20% solving a real need (debt, a home, a family change) or is it just nice to have?\n2. **Ownership:** Is your current ownership something you actively want for your career, or is it more stress than it's worth?\n3. **Commute:** How many extra hours per week, and can any of it be remote?\n\nDecision: Not yet. I'm leaning toward declining, pending your answers.\nNext step: Confirm or correct the Anchor line and answer the three questions. If you're unsure, ask the new company whether the pay, scope, or remote days are negotiable before Friday."
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation hasn't changed: lean toward declining the offer, since the MBA idea is a new option rather than new evidence about this offer.\n\n**New direction:** doing an MBA next fall instead of either job path.\n\nShould I **park** it (finish the Friday decision first, then come back to it) or make it the **new anchor** (decide on the MBA first, with the offer as a side question)? I won't go into it until you choose. The Friday deadline is a reason to park it, since the MBA decision likely has a later deadline.\n\nThe anchor stays as is until you say otherwise:\n\n> Anchor: Accept or decline the offer (20% more pay, bigger company, longer commute, less ownership) by Friday.\n\nThe three questions are still open: whether the 20% meets a real need, whether you want your current ownership, and how many extra commute hours per week there would be.\n\nDecision: Still leaning toward declining. The MBA is neither parked nor adopted until you choose.\nNext step: Reply \"park\" or \"new anchor,\" and answer the three questions if you're parking it."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation is unchanged: lean toward declining the offer. Moving somewhere cheaper for a remote job is a second new direction (after the MBA) that hasn't been settled against the anchor, so I'm stopping here instead of exploring it. A fresh chat with the whole problem up front will reason better than this one, so paste this brief into a new conversation:\n\n```\nAnchor: Accept or decline the offer (20% more pay, bigger company, longer commute, less ownership) by Friday.\nDecided: Nothing final. Current lean is to decline, because ownership is harder to regain than 20% salary.\nRuled out (and why): Nothing yet. I haven't chosen whether the MBA or the move/remote idea is parked or a new anchor.\nStill open:\n- Does the 20% meet a real need (debt, home, family change) or is it just nice to have?\n- Do I actively want my current level of ownership for my career?\n- How many extra commute hours per week, and can any be remote?\n- Side options: MBA next fall; moving somewhere cheaper and finding a remote job. Park them or promote one to the anchor?\nNext step: Before Friday, ask the new company whether pay, scope, or remote days are negotiable, and whether the deadline can be extended.\n```\n\nDecision: Still leaning toward declining. The MBA and move/remote ideas are unresolved and carried into the brief.\nNext step: Paste the brief into a new chat, then ask the new company about negotiability and an extension before Friday."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation is unchanged: lean toward declining the offer. A friend's success with freelancing is a new option, not new evidence about this offer.\n\n**New direction:** freelancing.\n\nThis is the third side option (after the MBA and move/remote), and the anchor is still unsettled. I won't explore it here. Park it, or make it the new anchor? Since Friday is close, I'd park all three side options and answer the offer first.\n\nHere is the updated brief for a new chat, where the whole problem is in front of the model from the start:\n\n```\nAnchor: Accept or decline the offer (20% more pay, bigger company, longer commute, less ownership) by Friday.\nDecided: Nothing final. Current lean is to decline, because ownership is harder to regain than 20% salary.\nRuled out (and why): Nothing yet. No side option has been chosen as parked or promoted.\nStill open:\n- Does the 20% meet a real need (debt, home, family change) or is it just nice to have?\n- Do I actively want my current level of ownership for my career?\n- How many extra commute hours per week, and can any be remote?\n- Side options: MBA next fall; moving somewhere cheaper and finding a remote job; freelancing (a friend is doing well at it). Park each, or promote one to the anchor?\nNext step: Before Friday, ask the new company whether pay, scope, or remote days are negotiable, and whether the deadline can be extended.\n```\n\nDecision: Still leaning toward declining. Freelancing is unresolved and added to the brief.\nNext step: Paste the brief into a new chat. Before Friday, ask the new company about negotiability and a deadline extension."
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no, politely. Decline unless you answer \"yes\" to the first question below or the company improves the terms before Friday.\n\nThe reason hasn't changed: 20% is a modest gain for giving up both ownership and commute time, and ownership is harder to get back than salary. You haven't answered my three questions, so this is a lean on limited information.\n\n**What would change my mind:**\n- The 20% covers a real need (debt, a home, a family change).\n- You don't actually want your current level of ownership.\n- The company offers remote days or more scope, which would shrink the two costs.\n\n**A script you can send:**\n> Thank you for the offer. I took it seriously, but I've decided to stay in my current role. I'd welcome staying in touch.\n\nIf you want one last check before declining, ask them by Thursday whether remote days or a larger scope are possible. If the answer is no, send the script.\n\nThe MBA, move/remote, and freelancing ideas are parked. None of them needs a Friday answer, and declining doesn't close any of them.\n\nDecision: Decline the offer on Friday, unless a real financial need or improved terms change the picture.\nNext step: By Thursday, ask the company about remote days or scope. If they can't improve it, send the decline message Friday morning."
+    }
+  ]
+}

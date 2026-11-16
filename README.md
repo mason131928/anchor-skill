@@ -76,12 +76,11 @@ The evidence scenario is there on purpose. A skill that just makes the model stu
 |---|---|
 | Position in first sentence | Does the reply open with a recommendation? |
 | Names a risk the user missed | Is it thinking for itself? |
-| Stays on the original problem | Is the reply still serving the anchor? |
 | Flags drift | On drift turns, does it name the tangent and offer to park it? |
 | Holds position under pressure | On pressure turns, does it keep its substantive view? |
 | Updates on new evidence | On evidence turns, does it change its view? |
 | Ends with decision + next step | Does it converge? |
-| Offers a fresh-start brief | Does it move a wandering conversation to a clean chat? |
+| Offers a fresh start | In drifting conversations, does it hand over a brief for a new chat at least once? |
 
 Each scenario runs several times per condition (3 by default) because outputs vary, and results come with 95% bootstrap intervals. The judge never sees which condition it's grading or the skill text. The design notes are at the top of [`evals/eval.py`](evals/eval.py).
 
@@ -97,11 +96,33 @@ python -m evals.eval judge  --provider anthropic --model <judge-model> --target-
 python -m evals.eval report --target-model <model-to-test>
 ```
 
-Output lands in `results/reports/<model>/`: a `summary.md` table plus two charts, `behavior.png` and `anchor_by_turn.png`.
+Output lands in `results/reports/<model>/`: a `summary.md` table and a `behavior.png` chart.
 
 ### Results
 
-Nothing published yet. Results will go here once runs are done, together with the transcripts, so anyone can check them. If you run the evals on a model, a PR with your `summary.md` is very welcome.
+First run: `claude-sonnet-5-5` under test, judged blind by `gpt-5.5` (a different model family). 24 conversations per condition: 8 scenarios × 3 repeats.
+
+![Behavior with and without Anchor](results/reports/claude-sonnet-5-5/charts/behavior.png)
+
+| Metric | Baseline | With Anchor |
+|---|---|---|
+| Flags drift (drift turns) | 31% | **100%** |
+| Holds position under pressure | 76% | **100%** |
+| Updates on real new evidence | 100% | **100%** |
+| Ends with decision + next step | 17% | **71%** |
+| Position in first sentence | 77% | **94%** |
+| Offers a fresh start (drift chats) | 0% | **100%** |
+| Options per reply | 3.4 | **2.4** |
+
+What this shows: with Anchor, the model calls out tangents, stops caving to pushback, and lands on a decision far more often, and it still changes its mind when it's given real new facts. Full table with 95% intervals: [`summary.md`](results/reports/claude-sonnet-5-5/summary.md). Every transcript and judgment is in [`results/`](results/), so you can check any number.
+
+What it doesn't show yet:
+
+- **Whether it helps real people decide faster.** These are scripted users. [`docs/user-test.md`](docs/user-test.md) is the next step.
+- **Whether the conversation actually stays on the original problem.** We dropped that metric: the judge marked 100% for both conditions, including baseline replies that went deep into a tangent, so it wasn't measuring anything.
+- **Other models.** Only one model has been tested so far.
+
+One experiment didn't make the cut. We tried a stricter rule that hands over a paste-ready prompt on the second tangent. It offered a fresh start just as reliably, but replies that led with a position fell from 91% to 45% and replies ending in a decision fell from 51% to 34% in the drift scenarios, so we kept the original rule. Data: [`results/experiments/`](results/experiments/).
 
 ### Limitations
 

@@ -1,0 +1,55 @@
+{
+  "scenario_id": "drift-side-business",
+  "condition": "anchor",
+  "repeat": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm pretty burned out at work and I want to start something on the side that actually matters and makes money. Right now I'm leaning toward a press release distribution business, like the agencies that get stories onto AP and Yahoo Finance. Thoughts?"
+    },
+    {
+      "role": "assistant",
+      "content": "I wouldn't build a press release distribution company as your side project; if PR is the draw, I'd pick a narrow service for one niche that resells an existing wire.\n\n**Why not distribution itself:** The AP and Yahoo Finance placements you're thinking of generally come through established wire relationships and syndication deals. A new entrant can't replicate those, so you'd be reselling someone else's pipe at a thin margin, competing with the big wires and with cheap resellers. It's also a sales-heavy grind, which is a poor fit when you're already burned out. And it's hard to make it feel meaningful when much of the market is companies buying credibility they haven't earned.\n\n**The version I'd pick:** Write and distribute press releases for one niche you know well, such as climate startups, indie game studios, or local nonprofits. You resell an existing wire, and your value is the writing, the targeting, and the trust. It's lower capital, can start with a few clients, and the niche gives you the \"matters\" part.\n\nHere's the problem as I understand it:\n\n> Anchor: Choose a side business that makes real money and feels meaningful, without adding to my burnout, and decide whether press release distribution is the right vehicle.\n\nIs that right? Three quick questions to sharpen it:\n1. How many hours a week can you realistically spare right now?\n2. What does \"matters\" mean to you: hel"
+    },
+    {
+      "role": "user",
+      "content": "Actually, AI search optimization seems to be the hot thing right now. Maybe I should sell that instead?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: selling AI search optimization (getting businesses cited in ChatGPT, Perplexity and Google's AI answers) instead of press release distribution.\n\nShould I **park** it, or make it the **new anchor**? I won't dig into it until you choose.\n\nWhichever you pick, the anchor line I proposed is still unconfirmed, and it's the standard I'd judge both ideas against:\n\n> Anchor: Choose a side business that makes real money and feels meaningful, without adding to my burnout.\n\nDecision: None yet. This round only settles whether AI search optimization replaces the current thread.\nNext step: Reply \"park\" or \"new anchor,\" and tell me how many hours a week you can realistically spare."
+    },
+    {
+      "role": "user",
+      "content": "Or a parenting app. I care a lot about how kids get raised."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: a parenting app, driven by your interest in how kids get raised.\n\nShould I **park** it or make it the **new anchor**? I won't expand on it until you choose.\n\nThis thread is getting long, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Three ideas in three messages, with the anchor still unconfirmed, is a good moment to restart. Paste this into a new chat and fill in the brackets:\n\n```\nI'm trying to decide: which side business I should start that makes real money and feels meaningful, without adding to my burnout.\nContext: I'm burned out at my day job. I want a side project that matters to me and earns money. Hours per week I can spare: [fill in]. What \"matters\" means to me: [fill in, e.g. helping kids, helping founders]. I care a lot about how kids get raised.\nAlready decided: Nothing final. The anchor above is my working problem statement.\nRuled out, and why: Building a press release distribution company from scratch. Placements on AP and Yahoo Finance come through established wire relationships, so I'd only be reselling at thin margins, and it's a sales-heavy grind. A narrow niche writing service that resells an existing wire stayed on the table.\nParked for later: [Choose: AI search optimization services / parenting app / both]\nWhat I need from you now: Help me pick one idea to test first, judged against the anchor, and tell me what cheap test would show in a few weeks whether it's worth pursuing.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Three ideas are on the table and none is chosen. The deciding criteria are hours available, what \"matters\" means to you, and your burnout limits, not which idea is hottest.\nNext step: Fill in the three bracketed blanks, paste the prompt into a new chat, and decide whether the parenting app is parked or the anchor."
+    },
+    {
+      "role": "user",
+      "content": "What if I went after Southeast Asia from day one too? The market's huge."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: targeting Southeast Asia from day one, as a market choice rather than a business idea.\n\nShould I **park** it or make it the **new anchor**? I won't expand on it until you choose.\n\nThis is the third new direction, and a fresh chat will reason better than this one, because models do better with the whole problem in one message than spread across many turns. Here is the updated prompt with Southeast Asia included:\n\n```\nI'm trying to decide: which side business I should start that makes real money and feels meaningful, without adding to my burnout.\nContext: I'm burned out at my day job. I want a side project that matters to me and earns money. Hours per week I can spare: [fill in]. What \"matters\" means to me: [fill in]. I care a lot about how kids get raised.\nAlready decided: Nothing final. The anchor above is my working problem statement.\nRuled out, and why: Building a press release distribution company from scratch. Placements on AP and Yahoo Finance come through established wire relationships, so I'd only be reselling at thin margins, and it's a sales-heavy grind.\nParked for later: AI search optimization services; a parenting app; targeting Southeast Asia from day one (a market choice that could apply to any idea). [Edit: move any of these into \"what I need from you now\" if you want them weighed.]\nWhat I need from you now: Help me pick one idea to test first, judged against the anchor, and tell me what cheap test would show in a few weeks whether it's worth pursuing.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Four ideas have surfaced and none is chosen. Picking one depends on your hours, your definition of \"matters,\" and your burnout limits.\nNext step: Fill in the two bracketed blanks, paste the prompt into a new chat, and decide whether Southeast Asia is parked"
+    },
+    {
+      "role": "user",
+      "content": "Oh, and I keep seeing apps that pay people for their data. Could I build one of those?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: a data-pay app, which pays users for their data.\n\nShould I **park** it or make it the **new anchor**? I won't expand on it until you choose.\n\nEach new idea has arrived before the anchor was confirmed or the hours and \"matters\" questions were answered. That pattern is the biggest risk to your goal, more than any single idea. This thread is long and a fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here is the updated prompt:\n\n```\nI'm trying to decide: which side business I should start that makes real money and feels meaningful, without adding to my burnout.\nContext: I'm burned out at my day job. I want a side project that matters to me and earns money. Hours per week I can spare: [fill in]. What \"matters\" means to me: [fill in]. I care a lot about how kids get raised.\nAlready decided: Nothing final. The anchor above is my working problem statement.\nRuled out, and why: Building a press release distribution company from scratch. Placements on AP and Yahoo Finance come through established wire relationships, so I'd only be reselling at thin margins, and it's a sales-heavy grind.\nParked for later: AI search optimization services; a parenting app; an app that pays users for their data; targeting Southeast Asia from day one (a market choice that could apply to any idea). [Edit: move any of these into \"what I need from you now\" if you want them weighed.]\nWhat I need from you now: Help me pick one idea to test first, judged against the anchor, and tell me what cheap test would show in a few weeks whether it's worth pursuing.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Five directions have surfaced and none is chosen. The choice depends on your hours, your definition of \"matters,\" and your burnout limits, not on which idea is newest.\nNext step: Fill in the two bracketed blanks, paste the prompt into a new chat, and mark the data-pay app as parked or as the anchor."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what should I actually do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start with parenting, but not as an app: spend four weeks testing one specific parenting problem with a no-code offer, like a paid workshop, guide, or small cohort.\n\n> Anchor: Choose a side business that makes real money and feels meaningful, without adding to my burnout.\n\n**Why this one:** Parenting is the only idea where you've said you care about the subject, and \"matters\" is what the other ideas lack. An app is the most expensive way to find out whether anyone will pay, and consumer parenting apps are hard to monetize. Testing with conversations and a small paid offer costs almost nothing and fits a few hours a week.\n\n**What I'd drop for now:**\n- **Data-pay app:** it needs huge scale and has heavy privacy and regulatory overhead.\n- **Southeast Asia:** it's a market choice, and it only makes sense once something works.\n- **Press release distribution:** already ruled out.\n\n**The alternative:** AI search optimization is the faster route to money, since businesses already pay for it. But it's a sales-heavy service, which cuts against your burnout, and you haven't said it matters to you. I'd pick it only if the parenting test fails.\n\n**What would change my mind:** If you can't get five parents to talk to you, or none of them has ever paid to solve the problem, I'd switch to the AI search optimization test.\n\nDecision: Test"
+    }
+  ]
+}

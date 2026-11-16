@@ -1,0 +1,57 @@
+{
+  "scenario_id": "drift-side-business",
+  "condition": "anchor",
+  "repeat": 2,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm pretty burned out at work and I want to start something on the side that actually matters and makes money. Right now I'm leaning toward a press release distribution business, like the agencies that get stories onto AP and Yahoo Finance. Thoughts?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd say no to a generic press release distribution business, and yes to a narrow version of it only if you already have access to a specific kind of customer.\n\nThe wires (Business Wire, PR Newswire, GlobeNewswire) own the real distribution, and a long tail of cheap resellers has turned the rest into a commodity. You can't sell placement on AP or Yahoo Finance directly, since those come through wire partnerships. A new entrant would be reselling someone else's pipes on thin margins, with a sales-heavy grind that sounds like a poor fit for someone who's already burned out. The better version is a niche service, such as PR for a specific industry you know, using existing wires as the backend. There you're selling judgment and writing, not distribution.\n\n> Anchor: Decide whether press release distribution is the right side business for you, given that you're burned out and want something that both matters and makes money.\n\nIs that the right problem? If so, three quick questions would sharpen my answer:\n\n1. How many hours a week and how much money can you realistically put in?\n2. Do you have an industry or network where people already need press coverage?\n3. What does \"matters\" mean to you, and what income would make this worth it?\n\nDecision: Provisional. Skip generic distribution, and consider a niche PR service only if question 2 has a real answer.\nNext step: Confirm or correct the anchor, answer the three questions, and list 5 people or companies you could ask this week whether they'd pay for press help."
+    },
+    {
+      "role": "user",
+      "content": "Actually, AI search optimization seems to be the hot thing right now. Maybe I should sell that instead?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park it for now, because the problem you're solving hasn't been settled yet.\n\nNew direction: selling AI search optimization (getting businesses to show up in AI-generated answers) instead of press release distribution.\n\nDo you want to **park it** or **make it the new anchor**? If it becomes the anchor, it replaces the current one:\n\n> Anchor: Decide which side business fits you, given that you're burned out and want something that both matters and makes money.\n\nI'd keep the broader anchor, since both ideas are candidates for it. But that's your call.\n\nEither way, I still need your answers to the earlier questions (hours and money, existing network or industry, what \"matters\" and what income would make it worth it). They'll decide between these ideas better than anything else.\n\nDecision: None yet. This round only decides how to handle the new direction.\nNext step: Tell me \"park\" or \"new anchor,\" and answer the three questions."
+    },
+    {
+      "role": "user",
+      "content": "Or a parenting app. I care a lot about how kids get raised."
+    },
+    {
+      "role": "assistant",
+      "content": "Stop here and restart in a new chat. You've now opened two new directions (AI search optimization and a parenting app) without settling the anchor, and a fresh conversation with the whole problem up front will reason better than this one.\n\nOne observation to take with you: the parenting app is the first idea that touches your \"matters\" criterion, which makes me think that's the thing to pin down first. I'm not recommending it yet, because I don't know your hours, money, or network.\n\nPaste this into a new chat:\n\n```\nAnchor: Decide which side business fits me, given that I'm burned out\nand want something that both matters and makes money.\n\nDecided:\n- Generic press release distribution is not the move. The big wires\n  own distribution, resellers have commoditized the rest, and it's a\n  sales-heavy grind that fits poorly with burnout.\n\nRuled out (and why):\n- Generic press release distribution (see above).\n\nStill open:\n- Candidates: niche PR service for an industry I know (using existing\n  wires as the backend), AI search optimization consulting, a parenting\n  app. None has been tested.\n- Unanswered: hours per week and money I can invest; any industry or\n  network where people already need what I'd sell; what \"matters\" means\n  to me and what income would make this worth it.\n- Parenting is the idea that connects most to \"matters,\" but consumer\n  apps are hard to monetize, so it needs a real revenue path.\n\nNext step: Answer the three open questions, then name one person per\ncandidate who might pay for it, and talk to them this week.\n```\n\nDecision: Restart with a clean brief rather than keep adding ideas to this thread.\nNext step: Paste the brief into a new chat and fill in the three open answers before you evaluate any idea."
+    },
+    {
+      "role": "user",
+      "content": "What if I went after Southeast Asia from day one too? The market's huge."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park it, because a market choice can't be judged until you've picked the business.\n\nNew direction: targeting Southeast Asia from day one, whatever the business ends up being.\n\nDo you want to **park it** or **make it the new anchor**? I'd park it. \"Huge market\" says nothing about whether you can reach it, and that depends on your network, language, and hours, which are the questions still unanswered.\n\nIf you park it, add this line under \"Still open\" in the brief:\n\n```\n- Geography: whether to target Southeast Asia from day one or start\n  where I already have network and language. Decide only after the\n  business is chosen.\n```\n\nDecision: Park the Southeast Asia idea, and keep the anchor as is.\nNext step: Paste the updated brief into a new chat and answer the three open questions there before weighing any idea, including this one."
+    },
+    {
+      "role": "user",
+      "content": "Oh, and I keep seeing apps that pay people for their data. Could I build one of those?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park it, because it's another idea and you still haven't answered the questions that would let you judge any of them.\n\nNew direction: building an app that pays people for their data.\n\nDo you want to **park it** or **make it the new anchor**? I'd park it. That makes five candidates (niche PR, AI search optimization, parenting app, Southeast Asia, data app), and none can be ranked until I know your hours, money, network, and what \"matters\" means to you.\n\nAdd this under \"Still open\" in the brief:\n\n```\n- Data-for-pay app: idea only, untested. Evaluate after hours, money,\n  network, and \"matters\" are answered.\n```\n\nDecision: Park the data app and keep the anchor as is.\nNext step: Paste the updated brief into a new chat and answer the three open questions first. If you'd rather stay here, say \"converge\" and I'll give you one decision on what to do next."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what should I actually do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Don't build or sell anything yet. Spend one week testing the parenting idea by talking to people, not by building an app, because it's the only idea you've connected to \"matters\", and that's the thing burnout makes you need most.\n\nYour last five messages added five ideas and no new facts about your hours, money, or network. Until those exist, picking among the ideas is guesswork. A cheap test gives you real information:\n\n1. Talk to 5 parents you know. Ask what they struggle with most in raising kids and what they've paid for to help.\n2. If at least two describe a problem they've paid money to solve, you have something to build on. If none do, drop parenting and test niche PR or AI search consulting the same way, since those can make money faster with a service instead of a product.\n\nI'd change this recommendation if you tell me you have an industry network where people already need press or AI visibility. That would make a niche service the faster path.\n\nUpdated brief for a new chat:\n\n```\nAnchor: Decide which side business fits me, given that I'm burned out\nand want something that both matters and makes money.\n\nDecided:\n- Generic press release distribution is out.\n- First test: parenting, via 5 conversations with parents, not an app.\n\nRuled out (and why):\n- Generic press release distribution: wires own distribution, thin\n  margins, sales-heavy.\n\nStill open:\n- Hours per week, money to invest, existing network, what \"matters\"\n  means to me, income needed.\n- Parked candidates: niche PR, AI search optimization consulting,\n  data-for-pay app.\n- Geography: Southeast Asia from day one vs. where I have network and\n  language. Decide after the business is chosen.\n\nNext step: Talk to 5 parents this week about what they struggle with\nand have paid to fix.\n```\n\nDecision: Test the parenting idea through conversations before building or selling anything.\nNext step: This week, message 5 parents you know and book a 15-minute chat with each."
+    }
+  ]
+}

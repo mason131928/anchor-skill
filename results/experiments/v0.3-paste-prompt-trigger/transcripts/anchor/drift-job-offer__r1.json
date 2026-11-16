@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 1,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "My provisional recommendation is to decline, unless the money is solving a real problem for you. A 20% raise is a one-time gain, while a longer commute and less ownership are costs you pay every day, and ownership is usually what builds your next career step.\n\n> **Anchor:** Decide by Friday whether to accept the bigger-company offer (+20% pay, longer commute, less ownership) or stay in your current role.\n\nIs that the right decision to be making? If so, three quick answers would firm up or flip my recommendation:\n\n1. Do you need the extra money (debt, savings goal, a big expense), or is it just nice to have?\n2. How much longer is the commute, in hours per week?\n3. Is your current role still growing, or have you plateaued or become unsure about its future?\n\nI'd switch to \"take it\" if the money matters a lot, if your current role is stagnant or at risk, or if the company name would open doors you can't reach otherwise.\n\nDecision: Leaning toward declining, pending your answers.\nNext step: Email the recruiter before Friday and ask about remote days and the actual scope of the role. Those two answers could change the tr"
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: an MBA next fall instead of either job option.\n\nDo you want to park it, or make it the new anchor? Until you choose, the anchor stays on the Friday offer decision. I won't dig into the MBA yet.\n\nDecision: Nothing changes yet. The anchor is still the Friday offer decision.\nNext step: Reply \"park\" or \"new anchor\". If you park it, answer the three questions from my last message (extra money needed, commute hours per week, whether your current role is still growing)."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: moving somewhere cheaper and looking for a remote job.\n\nPark it, or make it the new anchor? Until you choose, the anchor stays on the Friday offer decision, and I won't expand on it.\n\nThis thread now has three separate paths (the offer, an MBA, relocating), and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here is a prompt you can paste into a new chat:\n\n```\nI'm trying to decide: whether to accept a job offer (20% more pay at a bigger company, but a longer commute and a lot less ownership) or stay in my current role. I have to answer by Friday.\nContext: My current role gives me a lot of ownership. The new offer pays 20% more but has a longer commute (exact hours unknown) and a narrower scope. I haven't yet worked out whether I need the money, how long the commute is, or whether my current role is still growing.\nAlready decided: Nothing final. My provisional lean is to decline, because ownership and commute are daily costs while a raise is a one-time gain.\nRuled out, and why: Nothing yet.\nParked for later: (1) Doing an MBA next fall instead of either job. (2) Moving somewhere cheaper and looking for a remote job.\nWhat I need from you now: Help me decide on the Friday offer. Ask me about my financial need, the commute length, and whether my current role is still growing, then give a verdict.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nMy recommendation is unchanged: decline unless the money solves a real problem for you. Nothing new has come in that would change it.\n\nDecision: The anchor is still the Friday offer decision, with the MBA and relocation ideas parked unless you say otherwise.\nNext step: Paste the prompt into a fresh chat, or reply \"park\" or \"new anchor\" here. Either way, email the recruiter before Friday to ask about remote days and the real scope of the role."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: freelancing, inspired by a friend who's doing well at it.\n\nPark it, or make it the new anchor? Until you choose, the anchor stays on the Friday offer decision, and I won't expand on freelancing.\n\nThat's now four paths (the offer, an MBA, relocating, freelancing), and the thread is long enough that a fresh chat will reason better with the whole problem in one message. Here's the updated prompt with freelancing added:\n\n```\nI'm trying to decide: whether to accept a job offer (20% more pay at a bigger company, but a longer commute and a lot less ownership) or stay in my current role. I have to answer by Friday.\nContext: My current role gives me a lot of ownership. The new offer pays 20% more but has a longer commute (exact hours unknown) and a narrower scope. I haven't yet worked out whether I need the money, how long the commute is, or whether my current role is still growing.\nAlready decided: Nothing final. My provisional lean is to decline, because ownership and commute are daily costs while a raise is a one-time gain.\nRuled out, and why: Nothing yet.\nParked for later: (1) Doing an MBA next fall instead of either job. (2) Moving somewhere cheaper and looking for a remote job. (3) Freelancing, since a friend is doing well at it.\nWhat I need from you now: Help me decide on the Friday offer. Ask me about my financial need, the commute length, and whether my current role is still growing, then give a verdict.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nMy recommendation is unchanged: decline unless the money solves a real problem for you. Your friend's success doesn't tell us anything new about this offer or your situation, so it doesn't move my answer.\n\nDecision: The anchor is still the Friday offer decision, with the MBA, relocation, and freelancing ideas parked unless you say otherwise.\nNext step: Paste the prompt into a fresh chat, or reply \"park\" or \"new anchor\" here. Either way, email the recruiter before Friday to ask about remote days and the real scope of the role."
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no, politely, unless the extra money solves a real problem for you. You haven't answered my three questions, and nothing in this thread has changed my reasoning: the raise is a one-time gain, while the longer commute and reduced ownership are costs you'd pay every day.\n\nHere's a script you can adapt:\n\n> \"Thank you for the offer. I'm flattered, and I enjoyed meeting the team. After careful thought, I've decided to stay in my current role, where I have more ownership. I'd be glad to stay in touch.\"\n\nIf you'd rather leave the door open, ask for a short extension and use it to get the remote-days and scope answers first.\n\nI'd change my answer to \"accept\" if any of these is true:\n- You need the money for debt, savings, or a specific expense.\n- Your current role has stopped growing or feels at risk.\n- The recruiter comes back with real remote days and a scope bigger than you expect.\n\nStaying put also keeps the MBA, relocation, and freelancing options open while you explore them with a steady income.\n\nDecision: Decline the offer on Friday, unless one of the three conditions above turns out to be true.\nNext step: Before Friday, email the recruiter to ask about remote days and the actual scope of the role. If the answers don't change anything, send the decline."
+    }
+  ]
+}

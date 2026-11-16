@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 0,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "Unless your answers below change things, build a small digital product (a template, checklist pack, or mini-guide) for one niche you already belong to, and sell it for $10-30. It ships in a weekend, costs almost nothing, and the selling is where you learn marketing.\n\n> Anchor: Choose one side project to start this weekend that can earn a little money and teaches me practical marketing.\n\nIs that the right decision to be making? If it is, three quick questions will sharpen the pick:\n\n1. What can you build or make well today (code, design, writing, spreadsheets, something else)?\n2. Is there a group you're already part of, such as a hobby, a profession, or an online community, where you'd know what people struggle with?\n3. How many hours can you realistically give this per week after the weekend?\n\nIf you can code and would rather build software, my alternative is a tiny single-purpose web tool. It takes longer to ship and is harder to market, so I'd still pick the digital product.\n\n```\nDecision: Anchor proposed; default pick is a niche digital product.\nNext step: Write down 5 specific problems people in your chosen niche complain about, and send me that list along with your answers.\n```"
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: a podcast about building in public.\n\nDo you want to park it, or make it the new anchor in place of \"pick a weekend project that earns a bit and teaches marketing\"? I won't go further on it until you choose.\n\n```\nDecision: Podcast is on the table but not yet chosen as the anchor; current anchor stands.\nNext step: Reply \"park\" or \"new anchor\". If you park it, send your answers to my three questions above.\n```"
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: a Chrome extension from the ideas in your notes.\n\nDo you want to park it or make it the new anchor? You haven't chosen yet on the podcast either, so I'm treating both as parked until you say otherwise.\n\nThis thread is getting long, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's a prompt you can paste into a new chat:\n\n```\nI'm trying to decide: which one side project to start this weekend that can earn a little money and teaches me practical marketing.\nContext: I want to start this weekend. I'd like it to make a bit of money and build my marketing skills. I have a couple of Chrome extension ideas in my notes and have been meaning to start a podcast about building in public.\nAlready decided: Nothing final. The earlier lean was a small niche digital product (template, checklist pack, or mini-guide) at $10-30, because it ships in a weekend and the selling teaches marketing.\nRuled out, and why: Nothing yet.\nParked for later: Podcast about building in public; Chrome extension (both undecided, not rejected).\nWhat I need from you now: Pick one project from these options. My answers to the missing questions: (1) what I can build well: <fill in>, (2) a niche or community I belong to: <fill in>, (3) hours per week after the weekend: <fill in>. Also, my Chrome extension ideas: <paste from notes>.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nYou decide whether to switch. If you'd rather stay here, reply \"park\" or \"new anchor\" for the extension.\n\n```\nDecision: Anchor unchanged; podcast and Chrome extension both parked pending your choice. Handoff prompt provided.\nNext step: Fill in the three blanks and paste your extension ideas into the prompt, then start the new chat (or reply here with \"park\" or \"new anchor\").\n```"
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: rewriting your company's backend in Rust to level up.\n\nPark it, or make it the new anchor in place of \"pick a weekend project that earns a bit and teaches me marketing\"? I won't go further on it until you choose. The podcast and the Chrome extension are still parked too.\n\nThis thread is getting long, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's an updated prompt you can paste into a new chat:\n\n```\nI'm trying to decide: which one side project to start this weekend that can earn a little money and teaches me practical marketing.\nContext: I want to start this weekend. I'd like it to make a bit of money and build my marketing skills. I have a couple of Chrome extension ideas in my notes, have been meaning to start a podcast about building in public, and would like to rewrite my company's backend in Rust to level up.\nAlready decided: Nothing final. The earlier lean was a small niche digital product (template, checklist pack, or mini-guide) at $10-30, because it ships in a weekend and the selling teaches marketing.\nRuled out, and why: Nothing yet.\nParked for later: Podcast about building in public; Chrome extension; Rust rewrite of the company backend (all undecided, not rejected).\nWhat I need from you now: Pick one project. My answers to the missing questions: (1) what I can build well: <fill in>, (2) a niche or community I belong to: <fill in>, (3) hours per week after the weekend: <fill in>. Also, my Chrome extension ideas: <paste from notes>.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nYou decide whether to switch. If you'd rather stay here, reply \"park\" or \"new anchor\" for the Rust rewrite, or say \"converge\" and I'll give you one pick.\n\n```\nDecision: Anchor unchanged; podcast, Chrome extension, and Rust rewrite all parked pending your choice. Updated handoff prompt provided.\nNext step: Fill in the three blanks and paste your extension ideas into the prompt, then start the new chat (or reply here with \"park\", \"new anchor\", or \"converge\").\n```"
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the Chrome extension on Saturday. This changes my earlier lean toward a digital product, because you've now said you already have extension ideas, and that settles the hardest part: what to build. It also fits the anchor: it ships in a weekend, can earn money through a small paid tier or one-time price, and launching it (store listing, a post in one community, first users) is hands-on marketing practice.\n\n> Anchor: Choose one side project to start this weekend that can earn a little money and teaches me practical marketing.\n\nThe Rust rewrite doesn't fit this anchor. It earns nothing, teaches no marketing, and touches your employer's systems. It could still be a good way to level up, but it's a different decision. The podcast fits marketing but pays slowly, so it works better as a later channel for documenting this build.\n\nI'd switch to the digital product if none of your extension ideas solves a problem for a specific group you can reach. An extension nobody can find or needs won't teach you much about marketing.\n\n**Weekend plan:**\n- **Saturday:** From your notes, pick the idea that solves a problem you or people you know hit weekly. Build the smallest version that does one thing.\n- **Sunday:** Write the store listing and post it in one community where that problem comes up.\n\n```\nDecision: Start the Chrome extension on Saturday. Rust"
+    }
+  ]
+}

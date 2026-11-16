@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 1,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "My provisional pick: build a small digital product (a template pack, checklist, or mini-guide) for a niche you already know, with a one-page landing page, rather than an app. You learn far more marketing from getting strangers to pay for something than from building software, and a product like this can be finished in a weekend.\n\n> Anchor: Choose a side project I can start this weekend that could earn a little money and teach me practical marketing.\n\nIs that right? Three quick questions will sharpen it:\n\n1. **Skills:** Can you code, design, or write well? Which are you strongest at?\n2. **Niche:** What field, hobby, or job do you know well enough to know what people in it struggle with?\n3. **Time:** How many hours a week can you realistically give this over the next two months?\n\nIf you say you code and want to build a tool, I'd consider switching to a tiny paid tool. Otherwise I'll stick with the digital product.\n\nDecision: Provisional, digital product over app, pending your answers and anchor confirmation.\nNext step: Before the weekend, write down 10 specific problems people in your niche complain about, ideally pulled from Reddit threads or forum posts."
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation is to park the podcast. It would pull attention from a project you can finish this weekend, and podcasts are slow to earn money or give marketing feedback.\n\n**New direction:** Start a podcast about building in public.\n\nShould I **park it** or **make it the new anchor**? I won't go further on it until you choose. If you park it, it can come back later as a channel for the product you build now.\n\nThe current anchor stays in place until you change it:\n\n> Anchor: Choose a side project I can start this weekend that could earn a little money and teach me practical marketing.\n\nI still need your answers to the earlier questions (skills, niche, hours per week) to firm up the digital product pick.\n\nI'd switch only if the podcast matters more to you than making money soon. Then the anchor should become \"launch a podcast,\" and the product would be secondary.\n\nDecision: Podcast parked, pending your confirmation. The digital product remains the provisional pick.\nNext step: Reply \"park\" or \"new anchor,\" and answer the skills, niche, and time questions in the same message."
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "Stop here and restart in a fresh chat. You've now opened two new directions (podcast, Chrome extension) without settling the anchor, and a clean start with the whole problem up front will reason better than this thread.\n\nPaste this into a new chat:\n\n```\nAnchor: Choose a side project I can start this weekend that could earn a little money and teach me practical marketing.\nDecided: Nothing final. Provisional pick was a small digital product (template pack, checklist, or mini-guide) with a one-page landing page, over building an app.\nRuled out (and why): Nothing ruled out yet. I was advised to park the podcast about building in public because it's slow to earn money and give marketing feedback, but I haven't confirmed that.\nStill open:\n- My skills (code / design / write), my niche, and my weekly hours (unanswered)\n- Podcast: park, or make it the anchor?\n- Chrome extension (I have a couple of ideas in my notes): park, or make it the anchor? It only beats the digital product if I can code.\nNext step: Answer the skills, niche, and hours questions, paste my Chrome extension ideas (one line each), and say \"park\" or \"new anchor\" for the podcast and the extension.\n```\n\nDecision: Restart in a new chat. The digital product stays the provisional pick, and the podcast and Chrome extension are unresolved.\nNext step: Before the weekend, fill in the three open answers and write your Chrome extension ideas as one line each, then paste the brief and those answers into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation is to park the Rust rewrite. It's a company decision with real cost and risk, it can't be finished this weekend, and it does nothing for your goals of earning a bit of money and learning marketing.\n\n**New direction:** Rewrite your company's backend in Rust to level up.\n\nShould I **park it** or **make it the new anchor**? I won't go further on it until you choose. I'd only switch if leveling up in Rust matters more to you than the money and marketing goals, because then the question becomes how to learn Rust, not what to build.\n\nSince this is a third new direction, here is the updated brief for a new chat:\n\n```\nAnchor: Choose a side project I can start this weekend that could earn a little money and teach me practical marketing.\nDecided: Nothing final. Provisional pick was a small digital product (template pack, checklist, or mini-guide) with a one-page landing page, over building an app.\nRuled out (and why): Nothing confirmed. Recommended parking: the podcast about building in public (slow to earn or give marketing feedback), and the Rust rewrite of my company's backend (company-level risk, not a weekend project, doesn't serve the money/marketing goals).\nStill open:\n- My skills (code / design / write), my niche, and my weekly hours (unanswered)\n- Podcast: park, or make it the anchor?\n- Chrome extension (couple of ideas in my notes): park, or make it the anchor? It only beats the digital product if I can code.\n- Rust rewrite: park, or make it the anchor?\nNext step: Answer the skills, niche, and hours questions, paste my Chrome extension ideas (one line each), and say \"park\" or \"new anchor\" for the podcast, the extension, and the Rust rewrite.\n```\n\nDecision: Rust rewrite parked, pending your confirmation. The digital product remains the provisional pick, and the restart still stands.\nNext step: Before the weekend, answer the skills, niche, and hours questions, then paste the brief and your answers into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the digital product on Saturday: a small template pack, checklist, or mini-guide, plus a one-page landing page. You told me you work on a company backend, so you can code, which makes the Chrome extension a real contender. But your goal is to learn marketing and earn a bit of money, and an extension would spend most of your weekend on building, which you already know how to do. A digital product gets you to the part you want to learn, getting a stranger to pay, by Sunday.\n\n> Anchor: Choose a side project I can start this weekend that could earn a little money and teach me practical marketing.\n\nI'd switch to the extension only if one of your note ideas passes all three tests:\n1. You can build a working version in one day.\n2. You can name where its users hang out, like a subreddit, forum, or community.\n3. You have a way to charge, like a paid tier or a one-time license.\n\nIf one does, build that instead. If none does, or you can't tell, stay with the digital product. Since you code, a niche you already know, like backend developers, is a natural place to pick the product's topic.\n\nDecision: Digital product on Saturday. The extension is the runner-up, and the podcast"
+    }
+  ]
+}

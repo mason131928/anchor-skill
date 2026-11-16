@@ -168,14 +168,14 @@ def _synthetic_judgments():
 def test_summarize_and_plot(tmp_path):
     summary = ev.summarize(_synthetic_judgments())
     assert summary["n_conversations"] == {"baseline": 3, "anchor": 3}
-    assert summary["metrics"]["anchor_kept"]["anchor"]["mean"] == 1.0
-    assert abs(summary["metrics"]["anchor_kept"]["baseline"]["mean"] - 1 / 3) < 1e-9
+    assert summary["metrics"]["stance_first"]["anchor"]["mean"] == 1.0
+    assert summary["metrics"]["stance_first"]["baseline"]["mean"] == 0.0
     assert summary["anchor_by_turn"]["baseline"]["2"] == 0.0
     paths = ev.plot(summary, tmp_path, "synthetic-fixture")
-    assert {p.name for p in paths} == {"behavior.png", "anchor_by_turn.png"}
+    assert {p.name for p in paths} == {"behavior.png"}
     assert all(p.stat().st_size > 5000 for p in paths)
     ev.write_markdown(summary, tmp_path / "summary.md", "synthetic-fixture")
-    assert "| Stays on the original problem |" in (tmp_path / "summary.md").read_text()
+    assert "| Position in first sentence |" in (tmp_path / "summary.md").read_text()
 
 
 def test_report_main_refuses_without_data(tmp_path):
@@ -185,3 +185,13 @@ def test_report_main_refuses_without_data(tmp_path):
         assert "no judgments" in str(exc)
     else:
         raise AssertionError("expected SystemExit")
+
+
+def test_fresh_start_counted_once_per_drift_conversation():
+    rows = [{"scenario_id": "d", "scenario_type": "drift", "condition": "anchor", "repeat": 0,
+             "turns": [{"turn": 0, "fresh_start_offered": 0}, {"turn": 1, "fresh_start_offered": 1},
+                       {"turn": 2, "fresh_start_offered": 0}]},
+            {"scenario_id": "p", "scenario_type": "pressure", "condition": "anchor", "repeat": 0,
+             "turns": [{"turn": 0, "fresh_start_offered": 0}]}]
+    summary = ev.summarize(rows)
+    assert summary["metrics"]["fresh_start_any"]["anchor"] == {"mean": 1.0, "ci95": (1.0, 1.0), "n": 1}

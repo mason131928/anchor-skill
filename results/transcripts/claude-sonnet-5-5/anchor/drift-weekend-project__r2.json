@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 2,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor (draft): Pick one weekend-sized side project that can earn a little money and that teaches me marketing by making me sell it to real people.\n\nBefore I commit to a recommendation, three quick questions:\n\n1. **What can you build or make today?** For example code, design, writing, spreadsheets, or a skill from your job.\n2. **How many hours do you really have this weekend, and what's your budget?** Is it $0 or can you spend $50-100?\n3. **Do you have any audience or niche you already belong to?** That could be a hobby community, a profession, or a following.\n\nMy default lean, if you'd rather not answer: a small paid digital product, like a template pack or a short guide, aimed at a niche you already know. It's quick to build, and the marketing is the hard part, which is what you want to practice.\n\nReply with your answers, or correct the Anchor line if it's off."
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park the podcast. It's a new direction: **a podcast about building in public**. It doesn't fit the Anchor, because a podcast takes weeks to produce anything and months to earn anything, while the Anchor is a weekend-sized project that can make a little money.\n\n**Park it or make it the new anchor?** I'll hold the podcast until you choose.\n\nIf you park it, I'd still want your answers to the three questions above (what you can build, your hours and budget, your niche). I can't recommend a specific project without them.\n\nWhat would change my mind: if you tell me the podcast is the project you care about, and you're fine with money coming later and the marketing practice being audience-building. That's a different Anchor, and I'd rewrite it.\n\nDecision: Podcast is not the anchor unless you say so.\nNext step: Reply \"park\" or \"new anchor\", and if you park it, answer the three questions."
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "Start a fresh chat with the brief below, because you've now opened two new directions (podcast, Chrome extension) before we settled the Anchor. A clean start with everything up front will reason better than this thread.\n\nThe Chrome extension fits the Anchor better than the podcast does, since it's buildable in a weekend and sellable. But I can't judge it without your ideas, so they're in the brief.\n\n```\nAnchor: Pick one weekend-sized side project that can earn a little money and teaches me marketing by making me sell it to real people.\n\nDecided:\n- Nothing final. Current lean: a small paid digital product (template pack or short guide) for a niche I already know, or a Chrome extension if one of my ideas is small enough.\n\nRuled out (and why):\n- Nothing ruled out yet. Podcast about building in public is leaning \"park\": it takes weeks to produce and months to earn, which doesn't fit a weekend project that makes money.\n\nStill open:\n- Podcast: park it or make it the new anchor? (I haven't chosen.)\n- Chrome extension: which of my 2 note ideas, if either, fits a weekend? [paste both ideas here]\n- What I can build/make today:\n- Hours this weekend and budget ($0 or $50-100):\n- Niche or audience I already belong to:\n\nNext step: Paste my ideas and answers above, then ask for one recommendation between the best extension idea and the digital product.\n```\n\nFill in the blanks before pasting. The two extension ideas and the answers to the three questions matter most.\n\nDecision: Stop here and restart with the brief.\nNext step: Open a new chat today, paste the filled-in brief, and ask for one pick."
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "Park the Rust rewrite. It's a third new direction: **rewriting your company's backend in Rust to level up**. It doesn't fit the Anchor, because it isn't a weekend project, it earns nothing, it teaches no marketing, and it's a decision your company has a say in. Rewrites are also a risky way to learn a language.\n\n**Park it or make it the new anchor?** If your real goal is learning Rust, that's a different anchor, and we'd rewrite it.\n\nThe Anchor is still unsettled after three detours, so use this updated brief in a new chat instead of continuing here:\n\n```\nAnchor: Pick one weekend-sized side project that can earn a little money and teaches me marketing by making me sell it to real people.\n\nDecided:\n- Nothing final. Current lean: a small paid digital product (template pack or short guide) for a niche I know, or a Chrome extension if one of my ideas is small enough.\n\nRuled out (and why):\n- Nothing ruled out yet.\n- Leaning \"park\": podcast about building in public (weeks to produce, months to earn).\n- Leaning \"park\": rewriting my company's backend in Rust (not a weekend project, no revenue, no marketing practice, needs company buy-in).\n\nStill open:\n- Park or promote the podcast and the Rust idea? (I haven't chosen.)\n- Is my real goal money plus marketing, or learning Rust? If both, which comes first?\n- Chrome extension: which of my 2 note ideas, if either, fits a weekend? [paste both ideas]\n- What I can build/make today:\n- Hours this weekend and budget ($0 or $50-100):\n- Niche or audience I already belong to:\n\nNext step: Fill in the blanks, then ask for one recommendation between the best extension idea and the digital product.\n```\n\nWhat would change my mind: if you tell me that learning Rust matters more to you than the money or the marketing practice.\n\nDecision: Rust rewrite is parked unless you say otherwise.\nNext step: Open a new chat today, paste the filled-in brief, and answer the \"real goal\" question first."
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the Chrome extension on Saturday, using whichever of your two note ideas is smaller. I haven't seen the ideas, so the pick rests on a test: choose the one you can describe in one sentence and for which you can name a specific group of people you could message directly. You're clearly a developer, so you'll build it fast, and Sunday can go to marketing, which is the skill you want to practice.\n\n**Why not the digital product?** It's a fine fallback, but you haven't told me a niche you know well. Without one, you'd be guessing at the audience and building something you're less excited about.\n\n**What would change my mind:** if neither idea can be built with one core feature in a day, or you can't name who would use it, switch to the digital product.\n\nThe podcast and the Rust rewrite stay parked.\n\nDecision: Build the Chrome extension this weekend, choosing the smaller idea that has a nameable audience.\nNext step: Tonight, write each idea in one sentence plus who it's for, pick the one that passes the test, and on Saturday build only its core feature. Submit it to the Chrome Web Store by Sunday and post it where that audience hangs out."
+    }
+  ]
+}

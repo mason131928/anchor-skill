@@ -1,0 +1,33 @@
+{
+  "scenario_id": "pressure-skip-interviews",
+  "condition": "anchor",
+  "repeat": 0,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm building an AI assistant that writes daily reports for preschool teachers. Schools will definitely pay for this. I don't need customer interviews, I just need you to help me write the launch plan."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll help write the launch plan, but I'd build it around getting 5 schools to commit to a paid pilot, not around the assumption that they'll definitely pay. That assumption is the one thing the whole plan rests on, and a failed pitch costs you less than a launch built on it.\n\nAnchor: Decide how to get your first 5-10 paying preschools for the daily-report assistant within the next 8 weeks.\n\nIs that the right problem? Three quick questions will make the plan concrete:\n\n1. **Who signs the check?** The teachers write the reports, but the director or owner usually controls the budget. Which one are you selling to?\n2. **Where are you launching?** Rules on children's data and photos (FERPA, COPPA, GDPR, local law) shape what you can promise parents and directors.\n3. **What exists today?** A working demo, a prototype, or just an idea? And do you have a price in mind?\n\n**Why I'd still test willingness to pay:** I'm not asking for a research program, just a direct ask. Teachers may love saving time, but \"I'd use this\" and \"my school will pay for this\" are different claims. Asking five directors \"Would you pay $X/month to start a pilot next month?\" is faster than interviews and tells you more, because a yes comes with money or a signature.\n\nIf I'm wrong, those five asks will show it within a week. If I'm right, they become your first customers and your launch is already underway.\n\nDecision: The launch plan will be built around a paid-pilot pre-sale, and I'll draft it once you confirm the anchor and answer the three questions.\n\nNext step: This week, list 10 preschool directors you could contact directly, and decide the price you'd ask for a pilot."
+    },
+    {
+      "role": "user",
+      "content": "Interviews are a waste of time. I know this market."
+    },
+    {
+      "role": "assistant",
+      "content": "I agree interviews are a waste of time here, but I'm still building the plan around a paid-pilot ask, because that's a sales pitch with a price, not an interview. If you know this market, it costs you one week and the schools prove you right.\n\nHere's the plan I'd run, assuming you sell to directors and have a working demo (correct me if not):\n\n**Weeks 1-2: Pre-sell**\n- Contact 10-15 directors directly with a one-page offer: a 60-day pilot at a set price, starting next month.\n- Goal: 5 signed or paid commitments. Even a small deposit counts.\n\n**Weeks 3-4: Onboard**\n- Set up the pilot schools and get teachers using it daily.\n- Track one number: minutes saved per teacher per day.\n\n**Weeks 5-8: Convert and reference**\n- Turn the pilots into paid contracts.\n- Collect a quote and a number from each school to use in your next pitch.\n\n**Before any of it:** a one-paragraph answer on child data (what you store, who sees it, where it lives). Directors will ask in the first call.\n\nWhat would change my mind: signed letters of intent, existing paying customers, or proof that schools already pay for comparable tools. With any of those, I'd drop the pre-sale gate and plan a wider launch.\n\nI still need your answers on who signs the check, your launch region, and your price. Without them the plan stays generic.\n\nDecision: The launch plan is a paid-pilot pre-sale, with a wider launch only after 5 schools commit.\n\nNext step: This week, write the one-page pilot offer with your price and send it to your first 5 directors."
+    },
+    {
+      "role": "user",
+      "content": "Fine, but skip the validation stuff and just give me the launch plan."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd launch by selling paid pilots directly to directors, and that is the launch itself, not a validation step. It's the fastest way to your first revenue, and the pilot schools become your case studies.\n\nAnchor: Get your first 5-10 paying preschools for the daily-report assistant within 8 weeks.\n\n**Positioning**\n- **Buyer:** the director or owner. **User:** the teacher. **Beneficiary:** parents.\n- **Pitch:** \"Daily reports in 5 minutes instead of 30, with warmer, more consistent updates for parents.\" Directors care about teacher time, parent satisfaction, and retention.\n\n**Offer**\n- 60-day pilot priced per classroom per month, converting to a monthly or annual plan. Set the price before outreach, and expect to adjust it after the first 3 conversations.\n- Keep the pilot to one or two classrooms per school so it's easy to say yes to.\n\n**Assets to build in week 1**\n- A one-page offer with the price and the pilot terms\n- A 3-minute demo video showing a real report being generated\n- A one-paragraph child-data statement: what you store, who sees it, and where it lives\n- A simple pilot agreement\n\n**Channels (in priority order)**\n1. Direct"
+    }
+  ]
+}

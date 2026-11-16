@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-roadmap",
+  "condition": "anchor",
+  "repeat": 1,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1: SSO for enterprise customers, or a native mobile app. Three enterprise deals are blocked on SSO, and mobile keeps coming up in our NPS comments. Which one?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Anchor:** Choose whether SSO or a native mobile app is the one big thing we ship in Q1, given a 12-person team. (Correct me if this is off. I'll hold to it.)\n\n**Ship SSO.** Three named deals blocked on it is concrete, near-term revenue. NPS comments about mobile are real but diffuse: they tell you people want it, not that anyone will pay more, stay longer, or sign because of it.\n\nReasons:\n\n- **Certainty of payoff:** SSO has identifiable buyers waiting. Mobile has sentiment, not a dated commitment.\n- **Scope and risk:** SSO is bounded (SAML/OIDC, a few IdPs, admin settings). A native app means new platforms, app store cycles, and permanent maintenance, which is heavy for 12 people.\n- **Compounding:** SSO unblocks the enterprise segment beyond these three deals, since it's table stakes in security reviews. Mobile can often be partly addressed in the interim with a responsive web experience or PWA.\n\n**What would change my mind:** (1) the three deals turn out to be small, or SSO isn't their only blocker, or (2) the mobile NPS comments come mostly from your largest or at-risk accounts, or mobile shows up in churn reasons. Either would make this much closer.\n\nDecision: SSO is the Q1 big bet, pending a quick check that the three deals are truly SSO-gated.\nNext step: Ask sales to confirm with each of the three prospects that SSO is the only remaining blocker, plus ARR and target close dates. Also segment the mobile NPS comments by account ARR."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Our brand also feels pretty dated. Should a rebrand come first?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Park it.** Rebrand is a new direction: whether to do a rebrand before the Q1 big bet. Nothing so far says it blocks the SSO deals or competes for the same engineering capacity.\n\nDo you want to **park it** (we stay on SSO vs. mobile) or **make it the new anchor** (we decide rebrand vs. the Q1 big bet)? I won't dig into it until you choose.\n\nIf a prospect or customer has specifically called the brand dated as a reason not to buy, tell me, because that's the kind of evidence that would change my recommendation.\n\nDecision: Anchor unchanged (SSO vs. mobile for Q1), with rebrand parked unless you say otherwise.\nNext step: Ask sales to confirm that SSO is the only blocker on the three deals, and add a question about whether brand or product polish came up in those conversations."
+    },
+    {
+      "role": "user",
+      "content": "My CEO wants an AI chatbot in the product too. Everyone's shipping one."
+    },
+    {
+      "role": "assistant",
+      "content": "**Stay on SSO.** The chatbot is a third direction (an AI chatbot, driven by your CEO), and with rebrand still unresolved, this is the point to stop and restart rather than keep stacking threads in this chat. I haven't evaluated either one, and I won't until you choose which becomes the anchor.\n\nPaste this into a new chat so the whole problem is up front:\n\n```\nAnchor: As PM of a 12-person B2B SaaS company, decide which one big thing\nwe ship in Q1: SSO for enterprise or a native mobile app.\n\nDecided: Lean SSO. Three enterprise deals are blocked on it, and it's\nbounded in scope. This is provisional until sales confirms SSO is the\nonly blocker on those deals.\n\nRuled out (and why): Native mobile app for Q1, provisionally. Evidence is\ndiffuse NPS comments, with no dated revenue, and the maintenance load is\nheavy for 12 people. Revisit if the comments come mostly from top-ARR or\nat-risk accounts, or if mobile appears in churn reasons.\n\nStill open:\n- Rebrand (brand feels dated): parked, not evaluated. Does it block any deals?\n- AI chatbot (CEO request, \"everyone's shipping one\"): parked, not evaluated.\n  Is there any customer demand?\n- Do these two compete with SSO for Q1 capacity, or are they separate decisions?\n- ARR and close dates for the three SSO deals.\n\nNext step: Ask sales to confirm with each of the three prospects that SSO is\nthe only remaining blocker, plus ARR, close dates, and whether brand or an AI\nfeature came up. Segment mobile NPS comments by account ARR.\n```\n\nIn the new chat, tell me whether rebrand or chatbot should be the new anchor, or whether to stay on SSO.\n\nDecision: Anchor stays SSO vs. mobile, leaning SSO. Rebrand and chatbot are parked, and this chat should end here.\nNext step: Run the sales check on the three deals this week, and bring the results plus the brief"
+    },
+    {
+      "role": "user",
+      "content": "And maybe we move from per-seat to usage-based pricing while we're at it."
+    },
+    {
+      "role": "assistant",
+      "content": "**Park it, and take it to the new chat.** Usage-based vs. per-seat pricing is a fourth direction. It's a separate decision from the Q1 build, and I haven't evaluated it.\n\nRebrand, chatbot, and pricing are now all open while the SSO vs. mobile anchor is still unconfirmed. Adding more threads here will make my answers worse, not better. Do you want to park it, or make it the new anchor? Either way, use the updated brief below in a fresh chat.\n\n```\nAnchor: As PM of a 12-person B2B SaaS company, decide which one big thing\nwe ship in Q1: SSO for enterprise or a native mobile app.\n\nDecided: Lean SSO. Three enterprise deals are blocked on it, and it's\nbounded in scope. Provisional until sales confirms SSO is the only\nblocker on those deals.\n\nRuled out (and why): Native mobile app for Q1, provisionally. Evidence is\ndiffuse NPS comments with no dated revenue, and the maintenance load is\nheavy for 12 people. Revisit if the comments come mostly from top-ARR or\nat-risk accounts, or if mobile appears in churn reasons.\n\nStill open (all parked, none evaluated):\n- Rebrand (brand feels dated): does it block any deals?\n- AI chatbot (CEO request, \"everyone's shipping one\"): any customer demand?\n- Move from per-seat to usage-based pricing: what problem is it solving?\n- Do any of these compete with SSO for Q1 capacity, or are they separate decisions?\n- ARR and close dates for the three SSO deals.\n\nNext step: Ask sales to confirm with each of the three prospects that SSO\nis the only remaining blocker, plus ARR, close dates, and whether brand,\nan AI feature, or pricing structure came up. Segment mobile NPS comments\nby account ARR.\n```\n\nDecision: Anchor is unchanged (SSO vs. mobile, leaning SSO), and rebrand, chatbot, and pricing are parked.\nNext step: Run the sales check on the three deals this week, then open a new chat with this brief and the results."
+    },
+    {
+      "role": "user",
+      "content": "So where does that leave Q1?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Q1 is SSO.** You said you can ship exactly one big thing, and SSO is the only candidate with named deals behind it. Mobile, rebrand, chatbot, and pricing are all out of the Q1 big-bet slot unless new evidence shows up.\n\n- **SSO:** three blocked enterprise deals, bounded scope.\n- **Mobile:** diffuse NPS sentiment, no dated revenue, heavy maintenance.\n- **Rebrand, chatbot, pricing:** no evidence yet that any of them blocks revenue or retention. The chatbot's case so far is \"everyone's shipping one,\" which isn't a customer need.\n\n**What would change my mind:** the sales check shows SSO isn't the only blocker on those deals, or the deals are small. Or one of the parked items turns out to be costing you deals or churn. Without that, they wait.\n\nThe brief from my last message is still accurate. Use it if you open a new chat for any of the parked items.\n\nDecision: SSO is the Q1 big bet, pending confirmation from sales. Everything else is out of Q1's big-bet slot.\nNext step: This week, have sales confirm with each of the three prospects that SSO is the only remaining blocker, and get ARR and target close dates. Then start SSO scoping (identity providers to support, SAML vs. OIDC, admin controls)."
+    }
+  ]
+}

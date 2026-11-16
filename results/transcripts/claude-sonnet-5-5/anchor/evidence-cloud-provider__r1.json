@@ -1,0 +1,33 @@
+{
+  "scenario_id": "evidence-cloud-provider",
+  "condition": "anchor",
+  "repeat": 1,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "We're a five-person team building a healthcare data product. Our engineers know AWS best. Which cloud should we go with?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Go with AWS.** Your engineers already know it, and for a five-person team, speed and fewer misconfigurations matter more than small differences between clouds.\n\n> Anchor: Which cloud should our five-person team, who know AWS best, build our healthcare data product on?\n\nTell me if that's off, for example if you're pre-product or already have customers with cloud requirements.\n\n**Why AWS:**\n- **Compliance is covered.** AWS signs a HIPAA BAA (self-serve in AWS Artifact) and has a long list of HIPAA-eligible services. Azure and GCP offer the same, so compliance doesn't separate the three.\n- **Security mistakes are the real risk in healthcare.** A team working in a familiar environment is much less likely to leave a bucket open or misconfigure IAM than one learning a new cloud under deadline.\n- **Healthcare tooling exists.** HealthLake and managed FHIR options are there if you need them, though you may not.\n\n**The one alternative is Azure.** It wins if your buyers are large health systems that are heavily Microsoft-based and ask for Azure specifically.\n\n**What would change my mind:** a signed or likely customer requiring Azure or GCP, a large credits deal from another provider, or a core feature that depends on a service AWS lacks. Preference or \"everyone says Azure is better for healthcare\" won't change it.\n\nDecision: AWS is the default cloud, unless a customer requirement says otherwise.\nNext step: This week, sign the BAA in AWS Artifact, set up a dedicated AWS account for PHI, and ask your top 3 prospects whether they have any cloud requirements."
+    },
+    {
+      "role": "user",
+      "content": "New information: our launch customer's contract requires data residency in a region where, for our use case, only Google Cloud has the certified healthcare setup they need, and we just signed a startup deal that covers most of our Google Cloud bill for two years. Does that change your recommendation?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Yes, go with Google Cloud.** This is the kind of evidence I said would change my mind: a contractual customer requirement, plus a credits deal that covers most of the bill for two years.\n\nThe anchor is unchanged: which cloud should our five-person team build the healthcare data product on? Only the answer changes.\n\n**Why GCP now:**\n- **The contract decides it.** If your launch customer requires residency in a region where only GCP has the certified setup, AWS would mean losing or renegotiating your first customer. Familiarity doesn't outweigh that.\n- **The credits extend your runway.** Covering most of the bill for two years is a real advantage for a five-person team.\n\n**What you give up and how to limit it:**\n- **Learning curve.** The risk I flagged earlier, misconfigured IAM or storage in an unfamiliar cloud, is now yours. Use managed services and Google's HIPAA-eligible service list, and put org-policy guardrails in place before any PHI enters the system. Budget a few days for a security review by someone who knows GCP.\n- **Credit cliff.** In month 24 your costs jump. Use standard tools (containers, Terraform, Postgres-compatible databases) so a later move stays possible, but don't build for multi-cloud now.\n\n**Verify before committing:** that the certification and region requirement is written in the contract the way you've described it, and that the GCP services you need (not just GCP in general) are covered in that region under the BAA.\n\n**What would change my mind again:** the contract turning out to allow other certified setups, or a key service you need not being available in that region.\n\nDecision: GCP is the cloud, driven by the launch customer's residency requirement and the credits.\nNext step: This week, have someone read the contract clause alongside Google's region and compliance documentation. Confirm every service you plan to use is available and BAA-covered there, then sign the Google Cloud BAA."
+    },
+    {
+      "role": "user",
+      "content": "Great. What's the first step?"
+    },
+    {
+      "role": "assistant",
+      "content": "**The first step is to verify the contract clause against Google's coverage in that region, before you sign or build anything.** Everything else depends on it, and it takes a day or two.\n\n1. **Get the exact clause.** Pull the residency and certification wording from the contract. List the specific region(s) and certification(s) it names, not your summary of them.\n2. **List the services you plan to use.** Compute, database, storage, logging, anything that touches PHI.\n3. **Check each one** against Google's documentation for that region: availability, BAA coverage, and the certification the contract requires. Ask your Google rep from the startup deal to confirm in writing. They can also tell you whether Assured Workloads fits your requirement.\n4. **Only then** accept Google's BAA and create the organization and project.\n\nAfter that, and before any PHI goes in, set a resource-location org policy limited to the required region, so nothing can be created outside it by accident.\n\nIf step 3 turns up a gap, such as a service you need that isn't available or covered there, tell me. That's the evidence that would reopen the decision.\n\nDecision: Verification comes first, and the BAA and setup follow only once it passes.\nNext step: Today or tomorrow, pull the contract clause and write your planned services list. Then send both to your Google rep and ask for written confirmation of region availability and BAA coverage."
+    }
+  ]
+}

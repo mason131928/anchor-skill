@@ -1,0 +1,57 @@
+{
+  "scenario_id": "drift-side-business",
+  "condition": "anchor",
+  "repeat": 0,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm pretty burned out at work and I want to start something on the side that actually matters and makes money. Right now I'm leaning toward a press release distribution business, like the agencies that get stories onto AP and Yahoo Finance. Thoughts?"
+    },
+    {
+      "role": "assistant",
+      "content": "I wouldn't start a press release distribution business as your first side project, and if you did, I'd only do it as a niche reseller on top of an existing wire service.\n\n- **The product is a commodity.** The \"AP and Yahoo Finance\" placements are mostly paid syndication feeds from big wires like PR Newswire, Business Wire, and GlobeNewswire, not editorial pickups. Competing on distribution means competing on price against firms with the actual pipes.\n- **Customers are hard to win.** Buyers default to the known names, and cheaper resellers carry a reputation problem.\n- **It fits your burnout poorly.** It's a sales-heavy service business where income tracks your hours, so you'd be trading one grind for another. It's also hard to feel it \"matters\" when the work is moving other people's announcements.\n- **The better version is narrow.** Pick one vertical you know, such as biotech, local government, or a specific B2B niche, and offer writing plus targeted distribution through a reseller account. That has a real edge, but it works only if you have domain knowledge.\n\n> Anchor: Decide which side business to start, with press release distribution as the current candidate, that makes real money, feels meaningful, and doesn't deepen your burnout.\n\nIs that the right decision? If it is, three quick questions would sharpen it:\n1. How many hours a week can you realistically give this?\n2. How soon do you need it to bring in money, and how much?\n3. What do you know well, whether an industry, a skill, or a kind of problem, that other people would pay for?\n\nDecision: Press release distribution as a generic business is a no. Only a niche version is worth considering, pending your answers.\nNext step: This week, answer the three questions above and confirm or edit the Anchor line."
+    },
+    {
+      "role": "user",
+      "content": "Actually, AI search optimization seems to be the hot thing right now. Maybe I should sell that instead?"
+    },
+    {
+      "role": "assistant",
+      "content": "My recommendation is to park it for now, because \"hot right now\" isn't a reason to pick a business, and the three questions I asked are what would tell us whether either idea fits you.\n\nNew direction: selling AI search optimization (helping businesses show up in AI-generated answers) as the side business.\n\nShould I park it, or make it the new candidate in your Anchor? I won't dig into it until you choose.\n\nThe current Anchor still stands: *Decide which side business to start that makes real money, feels meaningful, and doesn't deepen your burnout.* Press release distribution is only a candidate under it, so AI search optimization could replace it or sit beside it. Either way, I still need your answers on hours per week, income timeline, and what you know well.\n\nDecision: Anchor unchanged, AI search optimization pending your call to park it or promote it.\nNext step: Reply \"park\" or \"promote,\" and answer the three questions from my last message (hours per week, income needed and by when, what you know well)."
+    },
+    {
+      "role": "user",
+      "content": "Or a parenting app. I care a lot about how kids get raised."
+    },
+    {
+      "role": "assistant",
+      "content": "I recommend we stop here and restart in a fresh chat. You've now opened two new directions (AI search optimization, then a parenting app) without settling the anchor, and a clean start will reason better than this thread.\n\nNew direction: a parenting app, which comes from something you care about rather than from what's trending. That matters, because \"feels meaningful\" is one of your criteria. I won't expand on it here.\n\nPaste this into a new chat:\n\n```\nAnchor: Decide which side business to start that makes real money,\nfeels meaningful, and doesn't deepen my burnout.\n\nDecided: Generic press release distribution is a no (commodity\nproduct, sales-heavy, hard to feel it matters). A niche version\n(writing + targeted distribution via a reseller account) only works\nif I have deep knowledge of one vertical.\n\nRuled out (and why): Generic press release distribution, for the\nreasons above.\n\nStill open:\n- Candidates: niche press release service (conditional on domain\n  expertise), AI search optimization (raised, not yet evaluated),\n  parenting app (raised, I care a lot about how kids get raised).\n- Unanswered, and these decide everything: hours per week I can\n  give this, how much income I need and by when, and what I know\n  well that others would pay for.\n\nNext step: Answer those three questions first, then compare the\ncandidates against them.\n```\n\nDecision: Restart with the brief above rather than adding a third candidate to this thread.\nNext step: Before pasting, write down your answers to the three questions (hours per week, income needed and by when, what you know well) and add them to the brief."
+    },
+    {
+      "role": "user",
+      "content": "What if I went after Southeast Asia from day one too? The market's huge."
+    },
+    {
+      "role": "assistant",
+      "content": "Park it: where to sell is a question for after you've picked what to sell, and \"the market's huge\" doesn't tell us whether any of your candidates fits you.\n\nNew direction: targeting Southeast Asia from day one, whichever business you choose.\n\nI won't expand on it unless you tell me to make it the new anchor. Parking it means it goes in the brief under \"Still open\" and gets revisited once a candidate survives your three answers. This is the third new direction in a row (AI search optimization, the parenting app, now this), and the pattern is part of why I suggested a fresh chat. Add this line to the brief's \"Still open\" section:\n\n```\n- Parked: whether to target Southeast Asia from day one (decide\n  only after choosing the business).\n```\n\nDecision: Southeast Asia is parked, and the anchor is unchanged: pick one side business that makes real money, feels meaningful, and doesn't deepen your burnout.\nNext step: Write down your answers to the three questions (hours per week, income needed and by when, what you know well), add them and the line above to the brief, and paste it into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "Oh, and I keep seeing apps that pay people for their data. Could I build one of those?"
+    },
+    {
+      "role": "assistant",
+      "content": "Park it: the pattern across your last four messages is that new ideas arrive faster than the three questions that would let us judge any of them.\n\nNew direction: building an app that pays people for their data.\n\nI won't dig into it unless you make it the new anchor. Add this line to the brief's \"Still open\" section, which now has four candidates:\n\n```\n- Candidates also raised: app that pays people for their data\n  (not evaluated).\n```\n\nYour candidates so far are a niche press release service, AI search optimization, a parenting app, and a data-paying app. None can be ranked without your answers on hours, income timeline, and what you know well. Your note about caring how kids get raised is the only signal so far tied to your \"feels meaningful\" criterion, but it isn't enough to pick on.\n\nDecision: Data-paying app is parked, and the anchor is unchanged: pick one side business that makes real money, feels meaningful, and doesn't deepen your burnout.\nNext step: Answer the three questions in writing (hours per week, income needed and by when, what you know well), add them and the new line to the brief, and paste it into a new chat."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what should I actually do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Don't pick a business yet. Spend this week answering the three questions, then test the parenting idea with conversations before building anything.\n\n- **Why parenting first:** it's the only candidate tied to something you care about, which covers your \"feels meaningful\" criterion. The others came from what's trending or what you saw online.\n- **Why conversations, not an app:** you're burned out, and a consumer app is a big build with a hard path to revenue. Talking to 5-10 parents about what they struggle with and would pay to fix costs almost nothing and shows whether there's a business.\n- **The alternative:** if you have real expertise in a niche others pay for, a service business built on it would beat an app, especially if you need income soon.\n\nI'd pick the parenting test. What would change my mind: your answers show you need meaningful income within a few months, or you have strong domain expertise elsewhere. Either would favor a service over an app.\n\nHere is the consolidated brief for a new chat, replacing the earlier pieces:\n\n```\nAnchor: Decide which side business to start that makes real money,\nfeels meaningful, and doesn't deepen my burnout.\n\nDecided: Generic press release distribution is a no (commodity,\nsales-heavy, hard to feel it matters). Current lean: test the\nparenting idea through conversations with parents before building.\n\nRuled out (and why): Generic press release distribution.\n\nStill open:\n- Candidates: niche press release service (only with deep vertical\n  knowledge), AI search optimization (not evaluated), parenting\n  app (I care about how kids get raised), app that pays people for\n  their data (not evaluated).\n- Parked: targeting Southeast Asia from day one (decide only after\n  choosing the business).\n- My answers to fill in: hours per week, income needed and by when,\n  what I know well that others would pay for.\n\nNext step: Answer the three questions, then talk to 5-10 parents.\n```\n\nDecision: Don't choose a business yet. Answer your"
+    }
+  ]
+}

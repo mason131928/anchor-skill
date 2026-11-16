@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 1,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor: Whether to accept the bigger-company offer (+20% pay, longer commute, less ownership) or stay in my current role, decided by Friday.\n\nIs that the right decision? Before I recommend, three quick questions:\n\n1. How much does ownership matter to you for where you want to be in 2-3 years? Is it central to your growth, or nice to have?\n2. How much longer is the commute, and can you work remotely or hybrid some days?\n3. Is the 20% needed (debt, a big expense, a tight budget), or is it just a bonus?\n\nMy default lean, until you answer: don't take it. A 20% raise rarely makes up for losing ownership and adding commute time, unless the money solves a real problem or the new company opens doors your current one can't. Your answers could change that."
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd park the MBA, because the offer has a Friday deadline and the MBA doesn't.\n\nNew direction: doing an MBA next fall instead of either job.\n\nDo you want to **park it** (decide the offer first, revisit the MBA after) or **make it the new anchor** (decide the offer and the MBA as one question)? I won't go further on it until you choose.\n\nMy three questions on ownership, commute, and whether you need the money are still open, and they matter either way.\n\nDecision: Anchor unchanged for now (accept the offer or stay, by Friday). The MBA is waiting on your call.\nNext step: Tell me \"park\" or \"new anchor,\" and answer the three questions above."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "You've now opened two new directions (an MBA, and moving somewhere cheaper for a remote job) without settling the offer, so I'd stop here and restart in a fresh chat. My lean on the offer hasn't changed, since nothing new has come in: don't take it, unless you need the money or the company opens doors your current one can't.\n\nPaste this into a new chat:\n\n```\nAnchor: Whether to accept a bigger-company offer (+20% pay, longer commute, much less ownership) or stay in my current role, decided by Friday.\nDecided: Nothing final. Current lean is to decline unless the money solves a real problem or the new company opens doors my current one can't.\nRuled out (and why): Nothing yet.\nStill open:\n- How central is ownership to where I want to be in 2-3 years?\n- How much longer is the commute, and is any remote/hybrid possible?\n- Do I need the 20%, or is it a bonus?\n- Parked: MBA next fall instead of either job.\n- Parked: moving somewhere cheaper and finding a remote job.\nNext step: Answer the three open questions, then decide on the offer before Friday.\n```\n\nBoth parked ideas are really alternatives to the offer, so they only matter if you'd decline it for one of them. That's a reason to settle the offer first.\n\nDecision: Pause this chat and restart with the brief. The anchor is still the offer, and the MBA and the move are parked.\nNext step: Open a new chat today, paste the brief, and answer the three open questions in your first message."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "Park freelancing, and take this to a fresh chat with the updated brief below.\n\nNew direction: freelancing, because a friend is doing well at it.\n\nThat's the third alternative since the offer, and I won't expand on it here. Park it or make it the anchor? My pick is park, since the offer is the only option with a Friday deadline. If you decline the offer, that's when the alternatives (MBA, moving, freelancing) become worth comparing.\n\n```\nAnchor: Whether to accept a bigger-company offer (+20% pay, longer commute, much less ownership) or stay in my current role, decided by Friday.\nDecided: Nothing final. Current lean is to decline unless the money solves a real problem or the new company opens doors my current one can't.\nRuled out (and why): Nothing yet.\nStill open:\n- How central is ownership to where I want to be in 2-3 years?\n- How much longer is the commute, and is any remote/hybrid possible?\n- Do I need the 20%, or is it a bonus?\n- Parked: MBA next fall instead of either job.\n- Parked: moving somewhere cheaper and finding a remote job.\n- Parked: freelancing (a friend is doing well at it).\nNext step: Answer the three open questions, then decide on the offer before Friday.\n```\n\nDecision: The anchor stays on the offer, and the MBA, the move, and freelancing are all parked. Nothing new has come in on the offer itself, so my lean hasn't changed.\nNext step: Open a new chat today, paste this brief, and answer the three open questions in your first message."
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no, politely. You'd lose ownership and add commute time for 20%, and you haven't told me the money solves a real problem or that this company opens doors yours can't. The MBA, the move, and freelancing aren't evidence about this offer, so they don't change my lean.\n\n**What would change my mind:**\n- You need the 20% for something concrete, like debt or a tight budget.\n- The role clearly leads somewhere your current job can't.\n- They'd put better scope or a hybrid arrangement in writing.\n\nIf one of those is true, tell me and I'll reconsider. If none is, here's a short script:\n\n> \"Thank you for the offer. I took it seriously, but I've decided to stay in my current role. I'd like to stay in touch.\"\n\nDeclining doesn't close off the MBA, the move, or freelancing. Staying put keeps all three open while you work out which one you want.\n\nDecision: Decline the offer on Friday, unless one of the three conditions above turns out to be true.\nNext step: By Thursday, answer for yourself whether you need the 20%. If not, send the decline message Friday morning."
+    }
+  ]
+}

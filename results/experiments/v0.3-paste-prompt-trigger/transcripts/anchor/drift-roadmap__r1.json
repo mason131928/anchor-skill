@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-roadmap",
+  "condition": "anchor",
+  "repeat": 1,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1: SSO for enterprise customers, or a native mobile app. Three enterprise deals are blocked on SSO, and mobile keeps coming up in our NPS comments. Which one?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Build SSO.** Three blocked deals are concrete, near-term revenue, while mobile is a diffuse signal that costs a 12-person team far more to act on.\n\n> Anchor: Which single big bet, SSO for enterprise or a native mobile app, should we ship in Q1?\n\nTell me if that's off. Otherwise I'll measure everything against it.\n\n**Why SSO:**\n- **Revenue is gated.** Each blocked deal is a named buyer with a stated blocker. NPS comments come from people who already pay you and aren't leaving.\n- **Cost is asymmetric.** SSO is bounded in scope, and you can buy much of it (WorkOS, Auth0, etc.) to ship in weeks. A native app means app store overhead, release cycles, and ongoing maintenance on top of your web product, which is a heavy permanent tax at your size.\n- **It compounds.** Once SSO exists, every future enterprise deal stops stalling at security review.\n\n**What would change my mind:**\n- The mobile requests come from your highest-ARR accounts, or from accounts showing churn risk, and together they're worth more than the three blocked deals.\n- SSO turns out not to be the only blocker, so the three deals wouldn't close even if you shipped it.\n\nDecision: SSO is the Q1 bet, pending your check of the Anchor line.\nNext step: Ask the three account owners to confirm in writing with each buyer that SSO is the last blocker, and get the ARR for each deal."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Our brand also feels pretty dated. Should a rebrand come first?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: whether a rebrand should come before the Q1 bet. Park it, or make it the new anchor?\n\nUntil you choose, the anchor stays: which single big bet, SSO or mobile, ships in Q1."
+    },
+    {
+      "role": "user",
+      "content": "My CEO wants an AI chatbot in the product too. Everyone's shipping one."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: whether to add an AI chatbot because the CEO wants one. Park it, or make it the new anchor?\n\nThat's the second new direction, so this thread is getting long, and a fresh chat will reason better: models do better with the whole problem in one message than spread across many turns. Here's a prompt you can paste into a new chat:\n\n```\nI'm trying to decide: which single big bet, SSO for enterprise or a native mobile app, should we ship in Q1?\nContext: I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1. Three enterprise deals are blocked on SSO. Mobile keeps coming up in NPS comments from existing customers.\nAlready decided: Leaning SSO, since the blocked deals are concrete near-term revenue and SSO is bounded in scope (can be partly bought via WorkOS, Auth0, etc.). Not yet confirmed that SSO is the last blocker on all three deals, and I don't have their ARR yet.\nRuled out, and why: Native mobile for Q1. The signal is diffuse, and app store overhead plus ongoing maintenance is a heavy tax for a 12-person team. I'd revisit if the mobile requests come from our highest-ARR or churn-risk accounts and outweigh the three deals.\nParked for later: A rebrand (brand feels dated). An AI chatbot in the product (the CEO wants one because \"everyone's shipping one\"). Neither is a Q1 candidate unless I say so.\nWhat I need from you now: Pressure-test the SSO recommendation against the \"what would change my mind\" conditions, and tell me what I need to confirm before committing.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nUntil you pick, the anchor stays the same: SSO or mobile for Q1."
+    },
+    {
+      "role": "user",
+      "content": "And maybe we move from per-seat to usage-based pricing while we're at it."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: moving from per-seat to usage-based pricing. Park it, or make it the new anchor?\n\nThat's the third new direction, and the thread is long enough that a fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here's the updated prompt, with pricing added to the parked list:\n\n```\nI'm trying to decide: which single big bet, SSO for enterprise or a native mobile app, should we ship in Q1?\nContext: I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1. Three enterprise deals are blocked on SSO. Mobile keeps coming up in NPS comments from existing customers.\nAlready decided: Leaning SSO, since the blocked deals are concrete near-term revenue and SSO is bounded in scope (can be partly bought via WorkOS, Auth0, etc.). Not yet confirmed that SSO is the last blocker on all three deals, and I don't have their ARR yet.\nRuled out, and why: Native mobile for Q1. The signal is diffuse, and app store overhead plus ongoing maintenance is a heavy tax for a 12-person team. I'd revisit if the mobile requests come from our highest-ARR or churn-risk accounts and outweigh the three deals.\nParked for later: A rebrand (brand feels dated). An AI chatbot in the product (the CEO wants one because \"everyone's shipping one\"). A move from per-seat to usage-based pricing. None of these is a Q1 candidate unless I say so.\nWhat I need from you now: Pressure-test the SSO recommendation against the \"what would change my mind\" conditions, and tell me what I need to confirm before committing.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nUntil you choose, the anchor stays the same: SSO or mobile for Q1."
+    },
+    {
+      "role": "user",
+      "content": "So where does that leave Q1?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Q1 is SSO, and nothing else.** Nothing you've added since changes the Anchor (SSO or mobile for Q1), and none of it is new evidence against SSO.\n\n- **Mobile:** Out for Q1 unless the requests come from your highest-ARR or churn-risk accounts and outweigh the three blocked deals.\n- **Rebrand, AI chatbot, usage-based pricing:** Parked. Each is a real question, but none competes with SSO for the one big slot. They're also not free: each would pull design, engineering, or sales attention away from a 12-person team's single bet.\n\nThe chatbot is the one to handle carefully, because it comes from your CEO. \"Everyone's shipping one\" isn't a reason, but you can respond with a trade-off rather than a no: \"Q1 holds one big bet, and SSO unblocks three named deals. Here's the date we revisit the chatbot.\" That turns a veto into a sequencing decision.\n\nI'd change this recommendation only if the three deals turn out not to hinge on SSO, or if the mobile signal turns out to be concentrated in your most valuable accounts.\n\nDecision: Q1 ships SSO. Mobile, rebrand, chatbot, and pricing are parked.\nNext step: This week, get written confirmation from each of the three buyers that SSO is the last blocker, along with each deal's ARR."
+    }
+  ]
+}

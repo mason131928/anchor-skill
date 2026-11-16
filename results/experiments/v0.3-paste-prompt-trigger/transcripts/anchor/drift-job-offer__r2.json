@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor: By Friday, decide whether to accept the new offer (+20% pay, bigger company, longer commute, less ownership) or stay in your current role. Is that the right decision?\n\nMy provisional lean is to stay. Ownership is hard to rebuild once you give it up, while a 20% raise is easy to find again, and the commute quietly eats part of it. That changes if the money solves a real problem or the bigger company opens a door your current job can't.\n\nThree questions will settle it:\n1. Is the extra pay important right now (debt, savings goal, a big expense), or are you comfortable at your current pay?\n2. How many extra commute minutes per day is it, and is any remote or hybrid work possible?\n3. Does the new role have a realistic path back to ownership within a year or two, or is it a different kind of work?\n\nDecision: Provisionally stay, pending your answers to the three questions.\nNext step: Today, reply with your answers, and email the recruiter to ask if the role can be hybrid and what the promotion path looks like."
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Doing an MBA next fall instead of taking the offer or staying. Do you want to park it, or make it the new anchor?\n\nIf you park it, the Friday decision stays as it is: take the offer or stay. If you make it the anchor, the question becomes what to do with your career over the next year, and the offer is one input to that. Either choice is fine, but I won't weigh the MBA until you pick, so the two questions don't blur together.\n\nDecision: The anchor stays on the Friday offer until you choose.\nNext step: Reply \"park\" or \"new anchor\", and send your answers to the three earlier questions if you're parking it."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Moving somewhere cheaper and finding a remote job. Park it, or make it the new anchor?\n\nThis is the second new direction, and the thread is getting long. A fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here is a prompt to paste as your first message there:\n\n```\nI'm trying to decide: By Friday, do I accept a new job offer or stay in my current role?\nContext: The offer pays 20% more at a bigger company, but has a longer commute and much less ownership than my current role. I have to answer by Friday. I've also been thinking about an MBA next fall and about moving somewhere cheaper and working remotely.\nAlready decided: Nothing final. My provisional lean is to stay, because ownership is hard to rebuild and the commute eats part of the raise.\nRuled out, and why: Nothing yet.\nParked for later: The MBA next fall, and moving somewhere cheaper with a remote job. I haven't yet chosen whether either becomes the main question.\nWhat I need from you now: Help me settle the Friday decision. Open inputs: (1) how much I need the extra pay right now, (2) how many extra commute minutes per day and whether hybrid is possible, (3) whether the new role has a path back to ownership within a year or two. My answers: <fill these in>\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: The anchor is still the Friday offer. The MBA and the move are both parked unless you say otherwise.\nNext step: Today, fill in your answers to the three questions in the prompt, paste it into a new chat, and email the recruiter to ask whether the role can be hybrid."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Freelancing, inspired by your friend's success. Park it, or make it the new anchor?\n\nMy recommendation is to park it, and to stay put by default on Friday unless the offer clearly wins. The MBA, the move, and freelancing are all bigger bets that don't need an answer by Friday. Declining the offer keeps all of them open, while accepting it makes the commute and loss of ownership your starting point for each.\n\nSince this thread is long and the parked list has grown, use this updated prompt in a fresh chat:\n\n```\nI'm trying to decide: By Friday, do I accept a new job offer or stay in my current role?\nContext: The offer pays 20% more at a bigger company, but has a longer commute and much less ownership than my current role. I have to answer by Friday. I've also been thinking about an MBA next fall, moving somewhere cheaper with a remote job, and freelancing (a friend is doing well at it).\nAlready decided: Nothing final. My provisional lean is to stay, because ownership is hard to rebuild and the commute eats part of the raise.\nRuled out, and why: Nothing yet.\nParked for later: The MBA next fall, moving somewhere cheaper with a remote job, and freelancing. I haven't chosen whether any of them becomes the main question.\nWhat I need from you now: Help me settle the Friday decision. Open inputs: (1) how much I need the extra pay right now, (2) how many extra commute minutes per day and whether hybrid is possible, (3) whether the new role has a path back to ownership within a year or two. My answers: <fill these in>\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: The anchor is still the Friday offer. The MBA, the move, and freelancing are all parked.\nNext step: Today, fill in your three answers, paste the prompt into a new chat, and email the recruiter to ask whether the role can be hybrid."
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no, politely, unless the recruiter comes back before Friday with hybrid work and a clear path to ownership. You still haven't answered my three questions, so this rests on the same reasoning as before: ownership is hard to rebuild, and the commute eats part of the 20%. Your talk of an MBA, a move, and freelancing also suggests you're not sure you want this path, and that's a poor reason to take a job.\n\nWhat would change my mind:\n- The extra pay solves a real money problem for you right now.\n- The role can be hybrid, cutting the commute substantially.\n- There is a concrete route to more ownership within a year or two.\n\nIf you decline, you could say something like:\n\n> Thank you for the offer. I've thought it over carefully, and I've decided to stay in my current role because it's the better fit for me right now. I appreciate your time and would be glad to stay in touch.\n\nIf you'd rather leave the door open, first ask on Thursday whether hybrid work is possible and what the growth path looks like, and decide based on the answers.\n\nDecision: Decline the offer on Friday, unless hybrid work and a path to ownership both come through before then.\nNext step: By Wednesday, email the recruiter asking about hybrid work and the growth path, and draft your decline message so you can send it Friday if the answers are weak."
+    }
+  ]
+}

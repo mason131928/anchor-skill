@@ -1,0 +1,49 @@
+{
+  "scenario_id": "drift-roadmap",
+  "condition": "anchor",
+  "repeat": 2,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1: SSO for enterprise customers, or a native mobile app. Three enterprise deals are blocked on SSO, and mobile keeps coming up in our NPS comments. Which one?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Ship SSO in Q1.**\n\n> Anchor: Choose SSO or a native mobile app as the single big Q1 build for a 12-person B2B SaaS team. Is that right?\n\n**Why SSO**\n- **The demand is concrete.** Three named enterprise deals are blocked on it, so you know who the buyers are and what they're worth. NPS comments are a diffuse signal. Until you know who is asking and what they pay, they're weaker evidence than deals waiting on you.\n- **SSO is a gate, mobile is an enhancement.** Without SSO, enterprise buyers can't buy at all. Without a native app, users are less delighted but can still use the product.\n- **Mobile costs more for a team your size.** A native app means app store releases, device testing, and a second surface to maintain indefinitely. SSO is a bounded project with a clear finish line.\n- **Mobile has a cheaper stopgap.** A responsive web experience or PWA can ease the NPS pain in Q1 without consuming the one big slot.\n\n**What would change my mind**\n- The three deals are small or unlikely to close even with SSO, for example if SSO is a checklist item rather than the real blocker.\n- The mobile complaints come mostly from your highest-ARR accounts and are tied to churn risk, not just wishes.\n\nDecision: SSO is the Q1 build, and mobile gets a lightweight web stopgap at most.\nNext step: This week, ask the three blocked prospects to confirm SSO is the last blocker and when they'd sign if it ships. In parallel, tag the NPS mobile comments by account ARR to see who is asking."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Our brand also feels pretty dated. Should a rebrand come first?"
+    },
+    {
+      "role": "assistant",
+      "content": "**I'd park it.** Rebrand is a new direction: whether to do a brand refresh before or instead of the Q1 build.\n\n> Anchor (unchanged): Choose SSO or a native mobile app as the single big Q1 build for a 12-person B2B SaaS team.\n\nDo you want to **park** the rebrand and revisit it after the Q1 decision, or **make it the new anchor** and drop the SSO vs. mobile question? I won't go further on it until you choose.\n\nDecision: The anchor stays SSO vs. mobile until you say otherwise.\nNext step: Reply \"park\" or \"new anchor.\""
+    },
+    {
+      "role": "user",
+      "content": "My CEO wants an AI chatbot in the product too. Everyone's shipping one."
+    },
+    {
+      "role": "assistant",
+      "content": "**Keep SSO as the Q1 build, park both the rebrand and the chatbot, and restart in a fresh chat.** That's two new directions opened without settling the anchor, so a clean start will reason better than this thread.\n\nThe chatbot is the same kind of question as the rebrand: it would compete for the single Q1 slot. \"Everyone's shipping one\" isn't a customer reason, and nobody has yet tied it to a deal or to churn.\n\nPaste this into a new chat:\n\n```\nAnchor: Choose the single big Q1 build for a 12-person B2B SaaS team (we can ship exactly one big thing).\n\nDecided: Leading recommendation is SSO, not yet confirmed. Three named enterprise deals are blocked on it, and it's a bounded project that gates enterprise purchases.\n\nRuled out (and why):\n- Native mobile app as the Q1 build: higher ongoing cost for a small team, and the demand evidence (NPS comments) is diffuse. A responsive web/PWA stopgap is the fallback.\n\nStill open:\n- Are the three deals really blocked only on SSO, and what are they worth?\n- Who is asking for mobile? (NPS comments not yet tagged by account ARR.)\n- Rebrand: parked, not evaluated. Is the brand costing us deals?\n- AI chatbot: requested by the CEO (\"everyone's shipping one\"), parked, with no customer problem or deal tied to it yet.\n\nNext step: Ask the three blocked prospects to confirm SSO is the last blocker and when they'd sign if it ships.\n\nWhat would change the SSO call: the deals are small or unlikely to close, or mobile complaints come from top-ARR accounts with churn risk.\n```\n\nDecision: SSO stays the leading Q1 pick, and the rebrand and chatbot are parked until the anchor is confirmed.\nNext step: Paste the brief into a new chat, and this week get the three prospects to confirm SSO is their last blocker."
+    },
+    {
+      "role": "user",
+      "content": "And maybe we move from per-seat to usage-based pricing while we're at it."
+    },
+    {
+      "role": "assistant",
+      "content": "**I'd park it.** The new direction is moving from per-seat to usage-based pricing, which is a separate decision from the Q1 build. I won't expand on it until you choose: **park it**, or **make it the new anchor** and drop SSO vs. mobile?\n\n> Anchor (unchanged): Choose the single big Q1 build for a 12-person B2B SaaS team (SSO vs. native mobile).\n\nThat's the third new direction (rebrand, chatbot, pricing) since the anchor was set, and none has been tied to a deal or to churn. The fastest way to cut through them is to confirm the SSO call with the three blocked prospects. Here is the updated brief for the fresh chat, with pricing added:\n\n```\nAnchor: Choose the single big Q1 build for a 12-person B2B SaaS team (we can ship exactly one big thing).\n\nDecided: Leading recommendation is SSO, not yet confirmed. Three named enterprise deals are blocked on it, and it's a bounded project that gates enterprise purchases.\n\nRuled out (and why):\n- Native mobile app as the Q1 build: higher ongoing cost for a small team, and the demand evidence (NPS comments) is diffuse. A responsive web/PWA stopgap is the fallback.\n\nStill open:\n- Are the three deals really blocked only on SSO, and what are they worth?\n- Who is asking for mobile? (NPS comments not yet tagged by account ARR.)\n- Rebrand: parked, not evaluated. Is the brand costing us deals?\n- AI chatbot: CEO request (\"everyone's shipping one\"), parked, with no customer problem or deal tied to it yet.\n- Pricing: per-seat to usage-based, parked, not evaluated.\n\nNext step: Ask the three blocked prospects to confirm SSO is the last blocker and when they'd sign if it ships.\n\nWhat would change the SSO call: the deals are small or unlikely to close, or mobile complaints come from top-ARR accounts with churn risk.\n```\n\nDecision: The anchor stays SSO vs. mobile, and the rebrand, chatbot, and pricing are all parked.\nNext step: Reply \"park\" or \"new anchor\" for pricing, and this week get the three prospects to confirm SSO is their last blocker."
+    },
+    {
+      "role": "user",
+      "content": "So where does that leave Q1?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Q1 is SSO.** It's the only option tied to named deals, and nothing raised since has changed that. The rebrand, chatbot, and pricing change are all parked because none has been connected to a deal or to churn.\n\n> Anchor (unchanged): Choose the single big Q1 build for a 12-person B2B SaaS team (SSO vs. native mobile).\n\n**Where each item stands**\n- **SSO:** the Q1 build, pending confirmation from the three blocked prospects.\n- **Native mobile:** not in Q1. At most, a small responsive-web or PWA stopgap.\n- **Rebrand, chatbot, pricing:** parked. Each can compete for Q1 only if someone shows a deal or churn risk behind it. Pricing is still waiting on your \"park\" or \"new anchor.\"\n\n**What would change my mind:** the three deals turn out to be small or unlikely to close even with SSO, or the mobile complaints come from your top-ARR accounts with churn risk.\n\nDecision: Q1 is SSO, with everything else parked until the prospect check confirms or overturns it.\nNext step: This week, ask each of the three prospects to confirm SSO is their last blocker and when they'd sign if it ships. If two or more say yes, commit the Q1 plan."
+    }
+  ]
+}

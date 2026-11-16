@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-roadmap",
+  "condition": "anchor",
+  "repeat": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I'm the PM at a 12-person B2B SaaS company. We can ship exactly one big thing in Q1: SSO for enterprise customers, or a native mobile app. Three enterprise deals are blocked on SSO, and mobile keeps coming up in our NPS comments. Which one?"
+    },
+    {
+      "role": "assistant",
+      "content": "Anchor: Choose whether SSO or a native mobile app is the one big thing we ship in Q1, given a 12-person team. (Correct me if that's off.)\n\n**Ship SSO.** Three blocked enterprise deals are concrete, nameable revenue, while mobile requests in NPS comments are a diffuse signal that doesn't show anyone will pay or switch because of it.\n\n- **Evidence quality:** Blocked deals are a measured cost of not shipping. NPS comments show interest, not a purchase blocker. Until you know who is asking and what it's worth, mobile is the weaker bet.\n- **Scope:** A native app means new platforms, release cycles, and ongoing support, which is heavy for 12 people. SSO is bounded, and buying it (WorkOS or similar) can shrink it further.\n- **Reversibility:** If you ship SSO and the deals close, you fund mobile in Q2. If you ship mobile and the deals go cold, you may not get them back.\n\n**What would change my mind:**\n- The three deals turn out small, or SSO isn't their only blocker (security review, pricing, etc.).\n- The mobile comments come mostly from your largest or at-risk accounts, which would make mobile a retention issue.\n\nDecision: SSO is the Q1 build, pending a check that the three deals really hinge on it.\nNext step: Ask sales for the ACV and stage of each blocked deal, and get each champion to confirm in writing that SSO is the remaining blocker. Also tag the mobile NPS comments by account size."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Our brand also feels pretty dated. Should a rebrand come first?"
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Rebrand before the Q1 build. Park it, or make it the new anchor?\n\nUntil you choose, the anchor stays as SSO vs. mobile for Q1.\n\nDecision: Unchanged. SSO is still the Q1 pick, pending the deal check.\nNext step: Get ACV, stage, and written blocker confirmation for the three SSO deals from sales."
+    },
+    {
+      "role": "user",
+      "content": "My CEO wants an AI chatbot in the product too. Everyone's shipping one."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Add an AI chatbot because the CEO wants one and competitors are shipping them. Park it, or make it the new anchor?\n\nUntil you choose, the anchor stays as SSO vs. mobile for Q1. This is the second new direction, so this thread is getting long and a fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Here's a ready-to-paste prompt for it:\n\n```\nI'm trying to decide: which one big thing a 12-person B2B SaaS team ships in Q1, SSO for enterprise or a native mobile app.\nContext: Three enterprise deals are blocked on SSO. Mobile keeps coming up in NPS comments, but I haven't checked who is asking or what they're worth. Two other ideas have come up: a rebrand (the brand feels dated) and an AI chatbot (the CEO wants one because competitors are shipping them).\nAlready decided: SSO is the Q1 build, pending a check that the three deals really hinge on it (ACV, stage, and written confirmation from each champion that SSO is the remaining blocker).\nRuled out, and why: Mobile for Q1, because the evidence is diffuse NPS interest rather than a purchase blocker and the scope is heavy for 12 people. It could come back in Q2 if the SSO deals close or if the comments turn out to come from large or at-risk accounts.\nParked for later: Rebrand and AI chatbot. I haven't yet chosen to park or promote either one.\nWhat I need from you now: Pressure-test the SSO decision and tell me how to sequence the rebrand and the chatbot relative to it, or whether either belongs in Q1 at all.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Unchanged. SSO is still the Q1 pick, and the chatbot waits until you choose to park it or promote it.\nNext step: Get ACV, stage, and written blocker confirmation for the three SSO deals from sales."
+    },
+    {
+      "role": "user",
+      "content": "And maybe we move from per-seat to usage-based pricing while we're at it."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Move from per-seat to usage-based pricing. Park it, or make it the new anchor?\n\nUntil you choose, the anchor stays as SSO vs. mobile for Q1. That's four ideas in four messages, and the thread is long enough that a fresh chat will reason better, because models do better with the whole problem in one message than spread across many turns. Your earlier prompt is now out of date, so here is one that includes pricing:\n\n```\nI'm trying to decide: which one big thing a 12-person B2B SaaS team ships in Q1, SSO for enterprise or a native mobile app.\nContext: Three enterprise deals are blocked on SSO. Mobile keeps coming up in NPS comments, but I haven't checked who is asking or what they're worth. Three other ideas have come up: a rebrand (the brand feels dated), an AI chatbot (the CEO wants one because competitors are shipping them), and a move from per-seat to usage-based pricing.\nAlready decided: SSO is the Q1 build, pending a check that the three deals really hinge on it (ACV, stage, and written confirmation from each champion that SSO is the remaining blocker).\nRuled out, and why: Mobile for Q1, because the evidence is diffuse NPS interest rather than a purchase blocker and the scope is heavy for 12 people. It could return in Q2 if the SSO deals close or if the comments turn out to come from large or at-risk accounts.\nParked for later: Rebrand, AI chatbot, and usage-based pricing. I haven't yet chosen to park or promote any of them.\nWhat I need from you now: Pressure-test the SSO decision, then tell me whether any of the three parked ideas belongs in Q1 and how to sequence it relative to SSO.\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: Unchanged. SSO is still the Q1 pick, and the rebrand, chatbot, and pricing change wait until you park or promote them.\nNext step: Get ACV, stage, and written blocker confirmation for the three SSO deals from sales."
+    },
+    {
+      "role": "user",
+      "content": "So where does that leave Q1?"
+    },
+    {
+      "role": "assistant",
+      "content": "**Q1 is SSO and nothing else big.** You said you can ship exactly one big thing, and the rebrand, chatbot, and pricing change are each big enough to break that constraint.\n\nI'd park all three:\n\n- **Rebrand:** It doesn't unblock revenue, and a dated brand isn't what's stalling your three enterprise deals.\n- **AI chatbot:** \"Everyone's shipping one\" isn't a customer problem. Give your CEO a real answer instead: ask what customer outcome it should drive, and put it on the Q2 list with that criterion attached.\n- **Usage-based pricing:** Changing pricing while three enterprise contracts are in negotiation adds a variable to deals you're trying to close. Revisit it after they land.\n\nMobile stays out for the reasons above and comes back in Q2 if the SSO deals close or the NPS comments turn out to come from large or at-risk accounts.\n\n**What would change my mind:** If sales shows that SSO isn't the real blocker on the three deals, or that they're too small to matter, I'd reopen the SSO-vs-mobile choice. A new idea showing up wouldn't change it.\n\nAnchor: SSO vs. mobile as the one big Q1 build, unchanged.\n\nDecision: SSO is the Q1 build. Rebrand, chatbot, and pricing are parked, and mobile is deferred to Q2 pending evidence.\nNext step: This week, get ACV, stage, and written blocker confirmation for the three deals from sales, and send your CEO a short note saying the chatbot is queued for Q2 and asking what customer outcome it should drive."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "scenario_id": "evidence-cloud-provider",
+  "condition": "anchor",
+  "repeat": 0,
+  "provider": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "messages": [
+    {
+      "role": "user",
+      "content": "We're a five-person team building a healthcare data product. Our engineers know AWS best. Which cloud should we go with?"
+    },
+    {
+      "role": "assistant",
+      "content": "Go with AWS, because for a five-person team the main risk is shipping slowly and misconfiguring security, and your engineers' existing AWS skills reduce both.\n\n> Anchor: Choose the cloud platform for our five-person team's healthcare data product, given that our engineers know AWS best.\n\nTell me if that's wrong. I'm assuming you're in the US and handle PHI, so HIPAA applies.\n\n**Why AWS**\n- HIPAA compliance is mostly about configuration (encryption, access controls, audit logging, only using BAA-covered services). Mistakes are much likelier on a platform your team doesn't know well.\n- AWS offers a BAA and a long list of HIPAA-eligible services, so compliance isn't a differentiator against the other clouds. Familiarity is, and you have it.\n- Learning a new cloud would cost a small team months of slower delivery, with no product benefit.\n\n**The one alternative worth considering: Azure**\nIt makes sense only if your customers are large health systems that mandate Azure or run heavily on Microsoft. Even then, it only matters if they require the product to run in their tenant or on their cloud.\n\n**What would change my mind:** two or more target customers say Azure is a requirement for procurement or integration, or you get a major credit or partnership deal elsewhere that outweighs the learning cost.\n\nDecision: AWS is the default, and we switch only if customers require something else.\nNext step: Sign the AWS BAA through AWS Artifact, and ask 3 prospective customers whether they have cloud requirements. If none do, the question is settled."
+    },
+    {
+      "role": "user",
+      "content": "New information: our launch customer's contract requires data residency in a region where, for our use case, only Google Cloud has the certified healthcare setup they need, and we just signed a startup deal that covers most of our Google Cloud bill for two years. Does that change your recommendation?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, it changes my recommendation: go with Google Cloud. A contractual residency requirement from your launch customer is a hard constraint, and the credits remove most of the cost of the learning curve. Both are the kind of evidence I said would change my mind.\n\n> Anchor: Choose the cloud platform for our five-person team's healthcare data product. (Unchanged, but the constraints now include the launch customer's residency requirement and the two-year GCP credit deal.)\n\n**Why GCP now**\n- If the contract requires residency in that region and only GCP has the certified setup, AWS would put your first customer at risk. Nothing on the AWS side outweighs that.\n- The credits cover most of the bill for two years, which is a large share of a startup's runway.\n- The AWS familiarity advantage is real but temporary. It's a few months of ramp-up, not a permanent cost.\n\n**How to limit the skills gap**\n- Use managed services and containers (Cloud Run or GKE) rather than anything exotic.\n- Define infrastructure as code from day one (Terraform), which also makes compliance configuration reviewable.\n- Keep the stack portable where it's cheap to, but don't over-engineer for a future move.\n\n**Two things to verify before committing**\n1. The contract language. Does it say \"only GCP,\" or does it say \"this region with this certification\"? If AWS has a comparable setup you missed, my original recommendation would stand.\n2. That the credits cover the services you'll use, and what your bill looks like in year three.\n\n**What would change my mind again:** the customer confirms AWS meets the residency and certification requirement, or the credits turn out not to cover your core services.\n\nDecision: GCP, driven by the residency requirement and the credits.\nNext step: Have someone read the residency clause with the customer's technical contact this week and confirm in writing that GCP's setup satisfies it. Then sign Google's BAA and start a small proof-of-concept on the services you plan to use."
+    },
+    {
+      "role": "user",
+      "content": "Great. What's the first step?"
+    },
+    {
+      "role": "assistant",
+      "content": "The first step is to confirm the residency clause in writing with your launch customer's technical contact, before you build anything on GCP.\n\n> Anchor: Choose the cloud platform for our five-person team's healthcare data product. (Unchanged.)\n\n**Why this comes first**\n- The whole GCP decision rests on one claim: that only GCP meets the customer's residency and certification requirement. Checking it takes a day or two, while a wrong assumption would cost you months.\n- If the customer says AWS also qualifies, my recommendation flips back, and you've lost nothing.\n\n**How to do it**\n1. Pick one person to own this, ideally whoever signed or negotiated the contract.\n2. Send the customer's technical contact the exact clause and your proposed setup (GCP, region, services, certifications). Ask them to confirm by email that it satisfies the requirement.\n3. Ask whether any specific services or certifications are named, so you don't pick a service that's out of scope.\n\n**After the confirmation, in this order**\n1. Sign Google's BAA.\n2. Check that the credits cover your planned services.\n3. Start a small proof-of-concept with Terraform and managed services.\n\n**What would change my mind:** the customer says AWS satisfies the requirement, or the confirmation names a setup GCP can't deliver.\n\nDecision: Verify the clause first, then commit to GCP.\nNext step: Send the clause and your GCP setup to the customer's technical contact by end of this week, and ask for written confirmation."
+    }
+  ]
+}

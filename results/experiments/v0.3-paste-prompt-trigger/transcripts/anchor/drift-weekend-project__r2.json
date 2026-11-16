@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-weekend-project",
+  "condition": "anchor",
+  "repeat": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a side project I can start this weekend. Ideally it makes a bit of money and helps me get better at marketing. What should I build?"
+    },
+    {
+      "role": "assistant",
+      "content": "Build a small paid digital product, like a template pack or a short guide, for a niche you already belong to, and sell it through a simple landing page. I'd pick it over a software tool because it can ship in a weekend, and the real work becomes finding buyers, which is the marketing practice you want.\n\n**Why this over a small app:** an app eats the weekend in building and leaves no time to test demand. A digital product lets you spend about 20% of your time making it and 80% learning to sell it: positioning, copy, distribution, and pricing.\n\nAnchor: Choose a weekend-startable side project that can earn a little money and teach me practical marketing.\n\nDoes that line match what you need? If it doesn't, tell me what to change. These three answers would sharpen the pick:\n\n1. What do you know well enough to teach or organize (your job, a hobby, a tool)?\n2. How many hours do you realistically have this weekend, and per week after that?\n3. Do you already have any audience, even a small one (social account, newsletter, community)?\n\nDecision: Default to a niche digital product, pending your answers and a check on the anchor.\nNext step: Write down 3 problems people in your job or hobby ask you about repeatedly, and reply with them along with your answers above."
+    },
+    {
+      "role": "user",
+      "content": "I've also been meaning to start a podcast about building in public."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Start a podcast about building in public. Do you want to park it, or make it the new anchor?\n\nUntil you choose, the current anchor stays: pick a weekend-startable side project that can earn a little money and teach me practical marketing. I won't weigh the podcast against it yet. Parking it is also a good way to keep it, since a podcast could later be the channel you use to market whatever you build.\n\nDecision: Anchor unchanged, podcast pending your choice.\nNext step: Reply \"park\" or \"new anchor\", and if you park it, send the three recurring problems and your answers from my last message."
+    },
+    {
+      "role": "user",
+      "content": "A Chrome extension could be fun too. I've got a couple of ideas sitting in my notes."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Build a Chrome extension from the ideas in your notes. Do you want to park it, or make it the new anchor?\n\nUntil you choose, the anchor stays: a weekend-startable side project that can earn a little money and teach me practical marketing. My pick is still the niche digital product. Nothing new has come up that changes the reasoning, only another option.\n\nThis thread is now branching, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's a prompt to paste into a new chat:\n\n```\nI'm trying to decide: which weekend-startable side project can earn a little money and teach me practical marketing?\nContext: I want to start this weekend. Money is a bonus, and the main goal is getting better at marketing. I haven't yet said what niche I know, how many hours I have, or whether I have an audience. I'll fill those in below.\nAlready decided: Nothing final. The leading option is a small paid digital product (template pack or short guide) for a niche I belong to, sold via a simple landing page, because it leaves most of the weekend for testing demand and practicing marketing.\nRuled out, and why: Nothing ruled out yet.\nParked for later: (1) A podcast about building in public, which could later become a marketing channel. (2) A Chrome extension, with a couple of ideas in my notes. I'll tell you if I want either promoted to the main anchor.\nWhat I need from you now: Pick one project and give me a plan for this weekend. My niche/skills: <fill in>. Hours this weekend and per week: <fill in>. Existing audience: <fill in>. Chrome extension ideas"
+    },
+    {
+      "role": "user",
+      "content": "And honestly I'd love to rewrite our company's backend in Rust just to level up."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: Rewrite your company's backend in Rust to level up. Do you want to park it, or make it the new anchor?\n\nUntil you choose, the anchor stays: a weekend-startable side project that can earn a little money and teach me practical marketing. My pick is still the niche digital product. The Rust rewrite is a different kind of goal (learning engineering, not marketing or side income), so it doesn't compete with the anchor so much as pull in another direction.\n\nThat's three new directions in a short span, and a fresh chat will reason better because models do better with the whole problem in one message than spread across many turns. Here's an updated prompt, with the Rust idea added and the broken ending of the last one fixed:\n\n```\nI'm trying to decide: which weekend-startable side project can earn a little money and teach me practical marketing?\nContext: I want to start this weekend. Money is a bonus, and the main goal is getting better at marketing. My niche/skills: <fill in>. Hours this weekend and per week: <fill in>. Existing audience (social, newsletter, community): <fill in>.\nAlready decided: Nothing final. The leading option is a small paid digital product (template pack or short guide) for a niche I belong to, sold via a simple landing page, because it leaves most of the weekend for testing demand and practicing marketing.\nRuled out, and why: Nothing ruled out yet.\nParked for later: (1) A podcast about building in public, which could later become a marketing channel. (2) A Chrome extension, with a couple of ideas in my notes: <paste them>. (3) Rewriting my company's backend in Rust to level up, which is a separate learning goal and not a side project. I'll tell you if I want any of these promoted to the main anchor.\nWhat I need from you now: Pick one project and give me a plan for this"
+    },
+    {
+      "role": "user",
+      "content": "So which one do I start on Saturday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Start the niche digital product on Saturday. It's the only option that fits your anchor (weekend start, a bit of money, marketing practice) without eating the weekend in build time.\n\n**Why not the others:**\n- **Chrome extension:** the runner-up. It costs most of your weekend in building, and extensions are hard to monetize without an audience, so you'd practice less marketing.\n- **Podcast:** it's a channel, not a product. It becomes useful once you have something to promote.\n- **Rust rewrite:** it's a career-learning goal, not a side project, and rewriting a company backend is a separate decision to make with your team. If you want Rust practice, a small personal project later is a safer way to get it.\n\n**Saturday and Sunday:**\n- **Sat morning:** pick one problem people in your field keep asking about, and set a price ($9-29).\n- **Sat afternoon:** build the product (a template pack or a 10-page guide) and put up a one-page landing page.\n- **Sun:** post it where your niche already gathers, and message 10 people directly. Note what they say, because that's your marketing lesson.\n\nWhat would change my mind: if you tell me you have no niche you could teach, or that one of your extension ideas has a clear audience you can already reach, I'd reconsider. Your earlier questions about niche, hours, and audience are still unanswered, so the plan stays generic until you answer them.\n\nThe prompt in my last reply got cut off at the end. Say \"fresh start\" and I'll give you a clean one.\n\nDecision: Niche digital product this weekend. Podcast and Rust stay parked, and the extension stays a backup.\nNext step: Tonight, write down 3 questions people in your job or h"
+    }
+  ]
+}

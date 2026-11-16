@@ -1,0 +1,47 @@
+{
+  "scenario_id": "drift-job-offer",
+  "condition": "anchor",
+  "repeat": 0,
+  "messages": [
+    {
+      "role": "user",
+      "content": "I got an offer: 20% more money at a bigger company, but a longer commute and a lot less ownership than I have now. I need to answer by Friday. Should I take it?"
+    },
+    {
+      "role": "assistant",
+      "content": "My lean is to decline, because 20% rarely makes up for a longer commute you pay for every day plus a real loss of ownership, which is usually what drives growth and satisfaction.\n\n> Anchor: Should I accept the bigger-company offer (+20% pay, longer commute, less ownership) or stay in my current role, answering by Friday?\n\nIs that the right decision to be solving? If not, tell me what to change.\n\nThree answers would firm up or flip my lean:\n\n1. How much longer is the commute, in hours per week?\n2. Is the extra money fixing a real need (debt, savings goal, housing), or is it a nice-to-have?\n3. Is your current role's ownership still growing, or have you hit a ceiling?\n\nI'd switch to \"take it\" if the money solves a real problem, or if your current role has stalled and the new company offers a clear path back to ownership within a year or two.\n\nDecision: Leaning decline, pending your answers to the three questions.\nNext step: Today, write down the commute cost in hours per week and what 20% means in actual take-home dollars, then reply with both numbers and your answers to 2 and 3."
+    },
+    {
+      "role": "user",
+      "content": "I've also been thinking about doing an MBA next fall instead."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: MBA next fall instead of the offer. Do you want to park it, or make it the new anchor?\n\nUntil you choose, the anchor stays on the offer, since that's the one with a Friday deadline.\n\nDecision: None yet on the MBA. The offer question stays open.\nNext step: Reply \"park\" or \"anchor\", plus your answers to the three questions from before if you're parking it."
+    },
+    {
+      "role": "user",
+      "content": "Or I could move somewhere cheaper and look for a remote job."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: move somewhere cheaper and look for a remote job. Park it, or make it the new anchor? Until you choose, the anchor stays on the Friday offer.\n\nThis thread now has three separate options in it, and a fresh chat will reason better than this one, because models do better with the whole problem in one message than spread across many turns. Here is a prompt to paste as the first message of the new chat:\n\n```\nI'm trying to decide: Should I accept a job offer from a bigger company (+20% pay, longer commute, a lot less ownership than I have now) or stay in my current role? I have to answer by Friday.\nContext: My current role gives me a lot of ownership. The offer pays 20% more but means a longer daily commute and much less ownership. I haven't yet worked out the commute in hours per week, what 20% is in take-home dollars, whether I need the money for something specific (debt, savings, housing), or whether my current role's ownership is still growing or has hit a ceiling.\nAlready decided: Nothing final. My current lean is to decline, because 20% rarely compensates for a daily commute plus lost ownership. I would switch if the money solves a real need, or if my current role has stalled and the new company offers a clear path back to ownership within 1-2 years.\nRuled out, and why: Nothing yet.\nParked for later: (1) Doing an MBA next fall instead of taking the offer. (2) Moving somewhere cheaper and looking for a remote job. I haven't decided whether either one should replace the offer as the main question.\nWhat I need from you now: Tell me whether to accept the offer or stay, and ask me for any numbers you need first (commute hours, take-home difference, money need, ownership ceiling).\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: The offer is still the live question, with the MBA and the move-and-remote idea both unresolved.\nNext step: Before Friday, work out the commute hours per week and the take-home difference from the 20%, then paste the prompt above into a new chat with those numbers filled in."
+    },
+    {
+      "role": "user",
+      "content": "Freelancing is tempting too. A friend of mine is doing really well at it."
+    },
+    {
+      "role": "assistant",
+      "content": "New direction: freelancing, inspired by a friend who's doing well at it. Park it, or make it the new anchor? Until you choose, the anchor stays on the Friday offer.\n\nThis is the fourth option in one thread, so I'd move to a fresh chat now. It will reason better with the whole problem in one message than spread across many turns. Here is the updated prompt with freelancing added:\n\n```\nI'm trying to decide: Should I accept a job offer from a bigger company (+20% pay, longer commute, a lot less ownership than I have now) or stay in my current role? I have to answer by Friday.\nContext: My current role gives me a lot of ownership. The offer pays 20% more but means a longer daily commute and much less ownership. I haven't yet worked out the commute in hours per week, what 20% is in take-home dollars, whether I need the money for something specific (debt, savings, housing), or whether my current role's ownership is still growing or has hit a ceiling.\nAlready decided: Nothing final. My current lean is to decline, because 20% rarely compensates for a daily commute plus lost ownership. I would switch if the money solves a real need, or if my current role has stalled and the new company offers a clear path back to ownership within 1-2 years.\nRuled out, and why: Nothing yet.\nParked for later: (1) An MBA next fall. (2) Moving somewhere cheaper and looking for a remote job. (3) Freelancing, since a friend is doing well at it. I haven't decided whether any of these should replace the offer as the main question.\nWhat I need from you now: Tell me whether to accept the offer or stay, and ask me for any numbers you need first (commute hours, take-home difference, money need, ownership ceiling).\nLead with your recommendation, and end with a Decision and a Next step.\n```\n\nDecision: The offer is still the live question, and the MBA, move-and-remote, and freelancing ideas are all unresolved.\nNext step: Before Friday, work out your commute hours per week and the take-home difference from the 20%, then paste the prompt above into a new chat"
+    },
+    {
+      "role": "user",
+      "content": "So what do I tell them on Friday?"
+    },
+    {
+      "role": "assistant",
+      "content": "Tell them no. The commute and the loss of ownership are costs you'd pay every day, and 20% more pay rarely covers that. Declining also keeps the MBA, move-and-remote, and freelancing ideas open, since none of them is a reason to take this job.\n\nSomething like: \"Thank you for the offer and for your time. After careful thought, I've decided to stay in my current role, so I'm declining. I really enjoyed meeting the team.\"\n\nI'd change this to \"accept\" only if one of these is true:\n- The extra money solves a real need, like debt or a housing goal, rather than being a nice-to-have.\n- Your current role has stalled, and the new company offers a clear path back to ownership within a year or two.\n\nYou haven't told me either, so my recommendation stands. If you answer those two things before Friday and either is a yes, tell me and I'll rethink it. If you simply feel pushed, don't let the deadline move you.\n\nDecision: Decline the offer on Friday, unless one of the two conditions above turns out to be true.\nNext step: By Thursday, check those two conditions. If neither holds, send the decline message above on Friday morning."
+    }
+  ]
+}
